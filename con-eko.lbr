@@ -10267,7 +10267,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOGO">
+<deviceset name="LOGO" prefix="SYM">
 <description>Eko-LED logo</description>
 <gates>
 <gate name="G$1" symbol="LOGO" x="0" y="0"/>

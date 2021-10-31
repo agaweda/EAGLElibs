@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -72,100 +72,85 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
+<description>Cold-Junction Compensated
+Thermocouple-to-Digital Converter
+&lt;p&gt;
+&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
 <packages>
-<package name="MCSP-Q-08-A-SG">
-<description>Based on S00108C drawing</description>
-<smd name="1" x="8.8" y="0" dx="0.7" dy="1.6" layer="1"/>
-<smd name="2" x="7.7" y="0" dx="0.7" dy="1.6" layer="1"/>
-<smd name="3" x="6.6" y="0" dx="0.7" dy="1.6" layer="1"/>
-<smd name="4" x="5.5" y="0" dx="0.7" dy="1.6" layer="1"/>
-<smd name="5" x="4.4" y="0" dx="0.7" dy="1.6" layer="1"/>
-<smd name="6" x="3.3" y="0" dx="0.7" dy="1.6" layer="1"/>
-<smd name="7" x="2.2" y="0" dx="0.7" dy="1.6" layer="1"/>
-<smd name="8" x="1.1" y="0" dx="0.7" dy="1.6" layer="1"/>
-<smd name="DET" x="0" y="0" dx="0.7" dy="1.6" layer="1"/>
-<hole x="1.6" y="-11" drill="0.9"/>
-<smd name="P$1" x="-1.2" y="-1.2" dx="1.2" dy="1.8" layer="1"/>
-<hole x="9.6" y="-11" drill="0.9"/>
-<smd name="P$2" x="-1.2" y="-10.6" dx="1.2" dy="2.2" layer="1"/>
-<smd name="P$3" x="14.3" y="-10.6" dx="1.2" dy="2.2" layer="1"/>
-<smd name="P$4" x="13.4" y="-1.05" dx="1.6" dy="1.5" layer="1"/>
-<wire x1="-1" y1="-14" x2="6.6" y2="-14" width="0.1524" layer="21"/>
-<wire x1="12" y1="-17.3" x2="1" y2="-17.3" width="0.1524" layer="51"/>
-<text x="-2.54" y="-10.16" size="1.778" layer="25" rot="R90">&gt;NAME</text>
-<wire x1="9.4" y1="-0.5" x2="12.3" y2="-0.5" width="0.1524" layer="21"/>
-<wire x1="14" y1="-2.1" x2="14" y2="-9.2" width="0.1524" layer="21"/>
-<wire x1="14" y1="-12" x2="14" y2="-15" width="0.1524" layer="21"/>
-<wire x1="6.6" y1="-14" x2="12" y2="-15" width="0.1524" layer="21" curve="-20.982954"/>
-<wire x1="12" y1="-15" x2="14" y2="-15" width="0.1524" layer="21"/>
-<wire x1="-1" y1="-9.2" x2="-1" y2="-2.4" width="0.1524" layer="21"/>
-<wire x1="-1" y1="-14" x2="-1" y2="-12" width="0.1524" layer="21"/>
-<wire x1="-1" y1="-2.4" x2="-1" y2="-0.5" width="0.1524" layer="51"/>
-<wire x1="-1" y1="-0.5" x2="9.4" y2="-0.5" width="0.1524" layer="51"/>
-<wire x1="12.3" y1="-0.5" x2="14" y2="-0.5" width="0.1524" layer="51"/>
-<wire x1="14" y1="-0.5" x2="14" y2="-2.1" width="0.1524" layer="51"/>
-<wire x1="14" y1="-9.2" x2="14" y2="-12" width="0.1524" layer="51"/>
-<wire x1="-1" y1="-12" x2="-1" y2="-9.2" width="0.1524" layer="51"/>
+<package name="SO-8" urn="urn:adsk.eagle:footprint:21104/1" locally_modified="yes">
+<description>&lt;b&gt;Small Outline Package&lt;/b&gt; SO-8, CASE 751</description>
+<wire x1="2.159" y1="1.9558" x2="-2.159" y2="1.9558" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="-1.9558" x2="2.54" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.54" y1="1.5748" x2="-2.159" y2="1.9558" width="0.1524" layer="21" curve="-90"/>
+<wire x1="2.159" y1="1.9558" x2="2.54" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.54" y1="-1.5748" x2="-2.159" y2="-1.9558" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.159" y1="-1.9558" x2="2.159" y2="-1.9558" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.5748" x2="2.54" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="1.5748" x2="-2.54" y2="-1.5748" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.508" x2="-2.54" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-2.54" y1="-1.6002" x2="2.54" y2="-1.6002" width="0.0508" layer="21"/>
+<smd name="1" x="-1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="8" x="-1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="7" x="-0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="6" x="0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<text x="3.937" y="-2.032" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-2.921" y="-1.905" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="1.651" y1="1.9558" x2="2.159" y2="3.0988" layer="51"/>
+<rectangle x1="-2.159" y1="-3.0988" x2="-1.651" y2="-1.9558" layer="51"/>
+<rectangle x1="-0.889" y1="-3.0988" x2="-0.381" y2="-1.9558" layer="51"/>
+<rectangle x1="0.381" y1="-3.0734" x2="0.889" y2="-1.9304" layer="51"/>
+<rectangle x1="1.651" y1="-3.0988" x2="2.159" y2="-1.9558" layer="51"/>
+<rectangle x1="0.381" y1="1.9558" x2="0.889" y2="3.0988" layer="51"/>
+<rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
+<rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
 </package>
 </packages>
 <symbols>
-<symbol name="CARD">
-<pin name="DAT1" x="-2.54" y="2.54" length="short"/>
-<pin name="DAT0" x="-2.54" y="5.08" length="short"/>
-<pin name="VSS" x="-2.54" y="7.62" length="short" direction="pwr"/>
-<pin name="CLK" x="-2.54" y="10.16" length="short" direction="in"/>
-<pin name="VDD" x="-2.54" y="12.7" length="short" direction="pwr"/>
-<pin name="CMD" x="-2.54" y="15.24" length="short"/>
-<pin name="CD/DAT3" x="-2.54" y="17.78" length="short"/>
-<pin name="DAT2" x="-2.54" y="20.32" length="short"/>
-<pin name="DET" x="12.7" y="27.94" length="short" direction="pas" rot="R270"/>
-<wire x1="0" y1="25.4" x2="17.78" y2="25.4" width="0.1524" layer="94"/>
-<wire x1="17.78" y1="25.4" x2="17.78" y2="0" width="0.1524" layer="94"/>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="25.4" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="2.54" x2="27.94" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="27.94" y1="2.54" x2="30.48" y2="5.08" width="0.1524" layer="94" curve="90"/>
-<wire x1="30.48" y1="5.08" x2="30.48" y2="15.24" width="0.1524" layer="94"/>
-<wire x1="30.48" y1="15.24" x2="27.94" y2="17.78" width="0.1524" layer="94" curve="90"/>
-<wire x1="27.94" y1="17.78" x2="23.368" y2="17.78" width="0.1524" layer="94"/>
-<wire x1="23.368" y1="17.78" x2="22.352" y2="16.764" width="0.1524" layer="94"/>
-<wire x1="22.352" y1="16.764" x2="21.082" y2="16.764" width="0.1524" layer="94"/>
-<wire x1="21.082" y1="16.764" x2="21.082" y2="17.78" width="0.1524" layer="94"/>
-<wire x1="21.082" y1="17.78" x2="20.32" y2="17.78" width="0.1524" layer="94"/>
-<wire x1="20.32" y1="17.78" x2="17.78" y2="15.24" width="0.1524" layer="94"/>
-<wire x1="17.78" y1="15.24" x2="12.7" y2="15.24" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="10.16" y2="12.7" width="0.1524" layer="94" curve="90"/>
-<wire x1="10.16" y1="12.7" x2="10.16" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="12.7" y2="2.54" width="0.1524" layer="94" curve="90"/>
-<wire x1="27.94" y1="2.54" x2="27.94" y2="17.78" width="0.1524" layer="94" curve="-33.398487"/>
-<text x="0" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-<symbol name="CASE">
-<pin name="P$1" x="0" y="-2.54" visible="off" length="short" rot="R90"/>
-<circle x="0" y="2.54" radius="2.54" width="0.1524" layer="94"/>
-<text x="0" y="2.54" size="1.016" layer="94" align="center">CASE</text>
+<symbol name="MAX31855">
+<pin name="VCC" x="-12.7" y="7.62" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle" direction="pwr"/>
+<pin name="SCK" x="12.7" y="7.62" length="middle" direction="in" rot="R180"/>
+<pin name="MISO" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="!CS!" x="12.7" y="-2.54" length="middle" direction="in" rot="R180"/>
+<pin name="T+" x="-2.54" y="-15.24" length="middle" direction="in" rot="R90"/>
+<pin name="T-" x="2.54" y="-15.24" length="middle" direction="in" rot="R90"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.1524" layer="94"/>
+<text x="-7.62" y="11.43" size="1.778" layer="95">&gt;NAME</text>
+<text x="8.89" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCSP-Q-08-A-SG" prefix="CON">
+<deviceset name="MAX31855" prefix="IC">
+<description>The MAX31855 performs cold-junction compensation
+and digitizes the signal from a K-, J-, N-, T-, S-, R-, or
+E-type thermocouple. The data is output in a signed
+14-bit, SPI-compatible, read-only format. This converter
+resolves temperatures to 0.25°C, allows readings as
+high as +1800°C and as low as -270°C, and exhibits
+thermocouple accuracy of ±2°C for temperatures ranging
+from -200°C to +700°C for K-type thermocouples. For full
+range accuracies and other thermocouple types, see the
+Thermal Characteristics specifications.</description>
 <gates>
-<gate name="G$1" symbol="CARD" x="0" y="0"/>
-<gate name="G$2" symbol="CASE" x="40.64" y="20.32" addlevel="request"/>
+<gate name="G$1" symbol="MAX31855" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MCSP-Q-08-A-SG">
+<device name="" package="SO-8">
 <connects>
-<connect gate="G$1" pin="CD/DAT3" pad="2"/>
-<connect gate="G$1" pin="CLK" pad="5"/>
-<connect gate="G$1" pin="CMD" pad="3"/>
-<connect gate="G$1" pin="DAT0" pad="7"/>
-<connect gate="G$1" pin="DAT1" pad="8"/>
-<connect gate="G$1" pin="DAT2" pad="1"/>
-<connect gate="G$1" pin="DET" pad="DET"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
-<connect gate="G$1" pin="VSS" pad="6"/>
-<connect gate="G$2" pin="P$1" pad="P$1 P$2 P$3 P$4"/>
+<connect gate="G$1" pin="!CS!" pad="6"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="MISO" pad="7"/>
+<connect gate="G$1" pin="SCK" pad="5"/>
+<connect gate="G$1" pin="T+" pad="3"/>
+<connect gate="G$1" pin="T-" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -176,4 +161,11 @@
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
