@@ -89,7 +89,7 @@
 <wire x1="1.25" y1="2.6" x2="2.6" y2="1.25" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="1" width="0.127" layer="51"/>
 <text x="-4" y="3" size="1.778" layer="25">&gt;NAME</text>
-<text x="-4" y="-3" size="1.778" layer="25" align="top-left">&gt;VALUE</text>
+<text x="-4" y="-3" size="1.778" layer="27" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>

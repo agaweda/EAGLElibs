@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1403,26 +1403,26 @@
 <wire x1="43.18" y1="-15.24" x2="-43.18" y2="-15.24" width="0.254" layer="94"/>
 <text x="-43.18" y="15.24" size="2.54" layer="95">&gt;NAME</text>
 <text x="-43.18" y="-17.78" size="2.54" layer="96">&gt;VALUE</text>
-<pin name="D8/PF12" x="48.26" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="PF12" x="48.26" y="-12.7" length="middle" direction="pas" rot="R180"/>
 <pin name="AVDD" x="48.26" y="5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="D9/PD15/TIMER_B_PWM2" x="48.26" y="-10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="D10/PD14/SPI_A_CS/TIM_B_PWM3" x="48.26" y="-7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="D11/ETH/PA7/SPI_A_MOSI/TIM_E_PWM1" x="48.26" y="-5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="D12/PA6/SPI_A_MISO" x="48.26" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="D13/PA5/SPI_A_SCK" x="48.26" y="0" length="middle" direction="pas" rot="R180"/>
-<pin name="D14/PB9/I2C_A_SDA" x="48.26" y="7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="D15/PB8/I2C_A_SCL" x="48.26" y="10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="D16/PC6/I2S_A_MCK" x="-48.26" y="10.16" length="middle" direction="pas"/>
-<pin name="D17/PB15/I2S_A_SD" x="-48.26" y="7.62" length="middle" direction="pas"/>
-<pin name="D18/PB13/I2S_A_CK" x="-48.26" y="5.08" length="middle" direction="pas"/>
-<pin name="D19/PB12/I2S_A_WS" x="-48.26" y="2.54" length="middle" direction="pas"/>
-<pin name="D20/PA15/I2S_B_WS" x="-48.26" y="0" length="middle" direction="pas"/>
-<pin name="D21/PC7/I2S_B_MCK" x="-48.26" y="-2.54" length="middle" direction="pas"/>
-<pin name="D22/PB5/I2S_B_SD/SPI_B_MOSI" x="-48.26" y="-5.08" length="middle" direction="pas"/>
-<pin name="D23/PB3/I2S_B_CK/SPI_B_SCK" x="-48.26" y="-7.62" length="middle" direction="pas"/>
-<pin name="D24/PA4/SPI_B_NSS" x="-48.26" y="-10.16" length="middle" direction="pas"/>
-<pin name="D25/PB4/SPI_B_MISO" x="-48.26" y="-12.7" length="middle" direction="pas"/>
-<pin name="GND_CN7" x="48.26" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="PD15" x="48.26" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="PD14" x="48.26" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="PA7" x="48.26" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="PA6" x="48.26" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="PA5" x="48.26" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="PB9" x="48.26" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="PB8" x="48.26" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="PC6" x="-48.26" y="10.16" length="middle" direction="pas"/>
+<pin name="PB15" x="-48.26" y="7.62" length="middle" direction="pas"/>
+<pin name="PB13" x="-48.26" y="5.08" length="middle" direction="pas"/>
+<pin name="PB12" x="-48.26" y="2.54" length="middle" direction="pas"/>
+<pin name="PA15" x="-48.26" y="0" length="middle" direction="pas"/>
+<pin name="PC7" x="-48.26" y="-2.54" length="middle" direction="pas"/>
+<pin name="PB5" x="-48.26" y="-5.08" length="middle" direction="pas"/>
+<pin name="PB3" x="-48.26" y="-7.62" length="middle" direction="pas"/>
+<pin name="PA4" x="-48.26" y="-10.16" length="middle" direction="pas"/>
+<pin name="PB4" x="-48.26" y="-12.7" length="middle" direction="pas"/>
+<pin name="GND" x="48.26" y="2.54" length="middle" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="NUCLEO-F429ZI_SECTION2">
 <wire x1="38.1" y1="-12.7" x2="38.1" y2="10.16" width="0.254" layer="94"/>
@@ -1431,20 +1431,20 @@
 <wire x1="-38.1" y1="-12.7" x2="38.1" y2="-12.7" width="0.254" layer="94"/>
 <text x="-38.1" y="12.7" size="2.54" layer="95">&gt;NAME</text>
 <text x="-38.1" y="-15.24" size="2.54" layer="96">&gt;VALUE</text>
-<pin name="D49/PG2" x="43.18" y="-7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="D50/PG3" x="43.18" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="PG2" x="43.18" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="PG3" x="43.18" y="-10.16" length="middle" direction="pas" rot="R180"/>
 <pin name="+3.3V" x="-43.18" y="0" length="middle" direction="pas"/>
 <pin name="+5V" x="-43.18" y="-2.54" length="middle" direction="pas"/>
-<pin name="D43/PC8/SDMMC_D0" x="43.18" y="7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="D44/PC9/SDMMC_D1/I2S_A_CKIN" x="43.18" y="5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="D45/PC10/SDMMC_D2" x="43.18" y="2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="D46/PC11/SDMMC_D3" x="43.18" y="0" length="middle" direction="pas" rot="R180"/>
-<pin name="D47/PC12/SDMMC_CK" x="43.18" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="D48/PD2/SDMMC_CMD" x="43.18" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="PC8" x="43.18" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="PC9" x="43.18" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="PC10" x="43.18" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="PC11" x="43.18" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="PC12" x="43.18" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="PD2" x="43.18" y="-5.08" length="middle" direction="pas" rot="R180"/>
 <pin name="IOREF" x="-43.18" y="5.08" length="middle" direction="pas"/>
 <pin name="VIN" x="-43.18" y="-10.16" length="middle" direction="pas"/>
 <pin name="RESET" x="-43.18" y="2.54" length="middle" direction="pas"/>
-<pin name="GND_CN8" x="-43.18" y="-5.08" length="middle" direction="pas"/>
+<pin name="GND" x="-43.18" y="-5.08" length="middle" direction="pas"/>
 </symbol>
 <symbol name="NUCLEO-F429ZI_SECTION3">
 <wire x1="27.94" y1="-20.32" x2="27.94" y2="20.32" width="0.254" layer="94"/>
@@ -1453,35 +1453,35 @@
 <wire x1="-27.94" y1="-20.32" x2="27.94" y2="-20.32" width="0.254" layer="94"/>
 <text x="-27.94" y="22.86" size="2.54" layer="95">&gt;NAME</text>
 <text x="-27.94" y="-22.86" size="2.54" layer="96">&gt;VALUE</text>
-<pin name="A3/PF3" x="-33.02" y="10.16" length="middle" direction="pas"/>
-<pin name="A4/PF5" x="-33.02" y="7.62" length="middle" direction="pas"/>
-<pin name="A5/PF10" x="-33.02" y="5.08" length="middle" direction="pas"/>
-<pin name="D61/PF8/SAI_B_SCK" x="33.02" y="-10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="D62/PF7/SAI_B_MCLK" x="33.02" y="-12.7" length="middle" direction="pas" rot="R180"/>
-<pin name="D63/PF9/SAI_B_FS" x="33.02" y="-15.24" length="middle" direction="pas" rot="R180"/>
-<pin name="D64/PG1" x="33.02" y="-17.78" length="middle" direction="pas" rot="R180"/>
-<pin name="D65/PG0" x="-33.02" y="-17.78" length="middle" direction="pas"/>
-<pin name="D68/PF0/I2C_B_SDA" x="-33.02" y="-7.62" length="middle" direction="pas"/>
-<pin name="D69/PF1/I2C_B_SCL" x="-33.02" y="-5.08" length="middle" direction="pas"/>
-<pin name="D70/PF2/I2C_B_SMBA" x="-33.02" y="-2.54" length="middle" direction="pas"/>
-<pin name="A0/PA3" x="-33.02" y="17.78" length="middle" direction="pas"/>
-<pin name="A1/PC0" x="-33.02" y="15.24" length="middle" direction="pas"/>
-<pin name="A2/PC3" x="-33.02" y="12.7" length="middle" direction="pas"/>
-<pin name="D51/PD7/USART_B_SCLK" x="33.02" y="17.78" length="middle" direction="pas" rot="R180"/>
-<pin name="D52/PD6/USART_B_RX" x="33.02" y="15.24" length="middle" direction="pas" rot="R180"/>
-<pin name="D53/PD5/USART_B_TX" x="33.02" y="12.7" length="middle" direction="pas" rot="R180"/>
-<pin name="D54/PD4/USART_B_RTS" x="33.02" y="10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="D55/PD3/USART_B_CTS" x="33.02" y="7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="D56/PE2/SAI_A_MCLK" x="33.02" y="2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="D57/PE4/SAI_A_FS" x="33.02" y="0" length="middle" direction="pas" rot="R180"/>
-<pin name="D58/PE5/SAI_A_SCK" x="33.02" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="D59/PE6/SAI_A_SD" x="33.02" y="-5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="D60/PE3/SAI_B_SD" x="33.02" y="-7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="D66/PD1/CAN_TX" x="-33.02" y="-15.24" length="middle" direction="pas"/>
-<pin name="D67/PD0/CAN_RX" x="-33.02" y="-12.7" length="middle" direction="pas"/>
-<pin name="D71/PA7" x="-33.02" y="0" length="middle" direction="pas"/>
-<pin name="GND_CN9" x="-33.02" y="-10.16" length="middle" direction="pas"/>
-<pin name="D72/NC" x="-33.02" y="2.54" length="middle" direction="pas"/>
+<pin name="PF3" x="-33.02" y="10.16" length="middle" direction="pas"/>
+<pin name="PF5" x="-33.02" y="7.62" length="middle" direction="pas"/>
+<pin name="PF10" x="-33.02" y="5.08" length="middle" direction="pas"/>
+<pin name="PF8" x="33.02" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="PF7" x="33.02" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="PF9" x="33.02" y="-15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="PG1" x="33.02" y="-17.78" length="middle" direction="pas" rot="R180"/>
+<pin name="PG0" x="-33.02" y="-17.78" length="middle" direction="pas"/>
+<pin name="PF0" x="-33.02" y="-7.62" length="middle" direction="pas"/>
+<pin name="PF1" x="-33.02" y="-5.08" length="middle" direction="pas"/>
+<pin name="PF2" x="-33.02" y="-2.54" length="middle" direction="pas"/>
+<pin name="PA3" x="-33.02" y="17.78" length="middle" direction="pas"/>
+<pin name="PC0" x="-33.02" y="15.24" length="middle" direction="pas"/>
+<pin name="PC3" x="-33.02" y="12.7" length="middle" direction="pas"/>
+<pin name="PD7" x="33.02" y="17.78" length="middle" direction="pas" rot="R180"/>
+<pin name="PD6" x="33.02" y="15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="PD5" x="33.02" y="12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="PD4" x="33.02" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="PD3" x="33.02" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="PE2" x="33.02" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="PE4" x="33.02" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="PE5" x="33.02" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="PE6" x="33.02" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="PE3" x="33.02" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="PD1" x="-33.02" y="-15.24" length="middle" direction="pas"/>
+<pin name="PD0" x="-33.02" y="-12.7" length="middle" direction="pas"/>
+<pin name="PA7" x="-33.02" y="0" length="middle" direction="pas"/>
+<pin name="GND" x="-33.02" y="-10.16" length="middle" direction="pas"/>
+<pin name="NC" x="-33.02" y="2.54" length="middle" direction="pas"/>
 </symbol>
 <symbol name="NUCLEO-F429ZI_SECTION4">
 <wire x1="33.02" y1="-22.86" x2="33.02" y2="22.86" width="0.254" layer="94"/>
@@ -1490,37 +1490,37 @@
 <wire x1="-33.02" y1="-22.86" x2="33.02" y2="-22.86" width="0.254" layer="94"/>
 <text x="-33.02" y="25.4" size="2.54" layer="95">&gt;NAME</text>
 <text x="-33.02" y="-25.4" size="2.54" layer="96">&gt;VALUE</text>
-<pin name="D2/PF15" x="38.1" y="7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="D4/PF14" x="38.1" y="12.7" length="middle" direction="pas" rot="R180"/>
-<pin name="D7/PF13" x="38.1" y="20.32" length="middle" direction="pas" rot="R180"/>
-<pin name="D0/PG9/USART_A_RX" x="38.1" y="2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="D1/PG14/USART_A_TX" x="38.1" y="5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="A6/PB1/ADC_A_IN" x="-38.1" y="12.7" length="middle" direction="pas"/>
+<pin name="PF15" x="38.1" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="PF14" x="38.1" y="12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="PF13" x="38.1" y="20.32" length="middle" direction="pas" rot="R180"/>
+<pin name="PG9" x="38.1" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="PG14" x="38.1" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="PB1" x="-38.1" y="12.7" length="middle" direction="pas"/>
 <pin name="AGND" x="-38.1" y="17.78" length="middle" direction="pas"/>
 <pin name="AVDD" x="-38.1" y="20.32" length="middle" direction="pas"/>
-<pin name="D3/PE13/TIMER_A_PWM3" x="38.1" y="10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="D5/PE11/TIMER_A_PWM2" x="38.1" y="15.24" length="middle" direction="pas" rot="R180"/>
-<pin name="D6/PE9/TIMER_A_PWM1" x="38.1" y="17.78" length="middle" direction="pas" rot="R180"/>
-<pin name="D26/PB6" x="-38.1" y="5.08" length="middle" direction="pas"/>
-<pin name="D27/PB2" x="-38.1" y="2.54" length="middle" direction="pas"/>
-<pin name="D28/PD13" x="-38.1" y="-2.54" length="middle" direction="pas"/>
-<pin name="D29/PD12" x="-38.1" y="-5.08" length="middle" direction="pas"/>
-<pin name="D30/PD11" x="-38.1" y="-7.62" length="middle" direction="pas"/>
-<pin name="D31/PE2" x="-38.1" y="-10.16" length="middle" direction="pas"/>
-<pin name="D32/PA0/TIMER_C_PWM1" x="-38.1" y="-15.24" length="middle" direction="pas"/>
-<pin name="D33/PB0/TIMER_D_PWM1" x="-38.1" y="-17.78" length="middle" direction="pas"/>
-<pin name="D34/PE0/TIMER_B_ETR" x="-38.1" y="-20.32" length="middle" direction="pas"/>
-<pin name="D35/PB11/TIMER_C_PWM3" x="38.1" y="-20.32" length="middle" direction="pas" rot="R180"/>
-<pin name="D36/PB10/TIMER_C_PWM2" x="38.1" y="-17.78" length="middle" direction="pas" rot="R180"/>
-<pin name="D37/PE15/TIMER_A_BKIN1" x="38.1" y="-15.24" length="middle" direction="pas" rot="R180"/>
-<pin name="D38/PE14" x="38.1" y="-12.7" length="middle" direction="pas" rot="R180"/>
-<pin name="D39/PE12/TIMER_A_PWM3N" x="38.1" y="-10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="D40/PE10/TIMER_A_PWM2N" x="38.1" y="-7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="D41/PE7/TIMER_A_ETR" x="38.1" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="D42/PE8/TIMER_A_PWM1N" x="38.1" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="PE13" x="38.1" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="PE11" x="38.1" y="15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="PE9" x="38.1" y="17.78" length="middle" direction="pas" rot="R180"/>
+<pin name="PB6" x="-38.1" y="5.08" length="middle" direction="pas"/>
+<pin name="PB2" x="-38.1" y="2.54" length="middle" direction="pas"/>
+<pin name="PD13" x="-38.1" y="-2.54" length="middle" direction="pas"/>
+<pin name="PD12" x="-38.1" y="-5.08" length="middle" direction="pas"/>
+<pin name="PD11" x="-38.1" y="-7.62" length="middle" direction="pas"/>
+<pin name="PE2" x="-38.1" y="-10.16" length="middle" direction="pas"/>
+<pin name="PA0" x="-38.1" y="-15.24" length="middle" direction="pas"/>
+<pin name="PB0" x="-38.1" y="-17.78" length="middle" direction="pas"/>
+<pin name="PE0" x="-38.1" y="-20.32" length="middle" direction="pas"/>
+<pin name="PB11" x="38.1" y="-20.32" length="middle" direction="pas" rot="R180"/>
+<pin name="PB10" x="38.1" y="-17.78" length="middle" direction="pas" rot="R180"/>
+<pin name="PE15" x="38.1" y="-15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="PE14" x="38.1" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="PE12" x="38.1" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="PE10" x="38.1" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="PE7" x="38.1" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="PE8" x="38.1" y="0" length="middle" direction="pas" rot="R180"/>
 <pin name="GND_CN10" x="-38.1" y="15.24" length="middle" direction="pas"/>
-<pin name="A7/PC2/ADC_B_IN" x="-38.1" y="10.16" length="middle" direction="pas"/>
-<pin name="A8/PF4/ADC_C_IN" x="-38.1" y="7.62" length="middle" direction="pas"/>
+<pin name="PC2" x="-38.1" y="10.16" length="middle" direction="pas"/>
+<pin name="PF4" x="-38.1" y="7.62" length="middle" direction="pas"/>
 </symbol>
 <symbol name="NUCLEO-F429ZI_SECTION5">
 <wire x1="-10.16" y1="-45.72" x2="-10.16" y2="45.72" width="0.254" layer="94"/>
@@ -1820,37 +1820,37 @@
 <devices>
 <device name="" package="MODULE_NUCLEO-F429ZI">
 <connects>
-<connect gate="CN10" pin="A6/PB1/ADC_A_IN" pad="CN10_7"/>
-<connect gate="CN10" pin="A7/PC2/ADC_B_IN" pad="CN10_9"/>
-<connect gate="CN10" pin="A8/PF4/ADC_C_IN" pad="CN10_11"/>
 <connect gate="CN10" pin="AGND" pad="CN10_3"/>
 <connect gate="CN10" pin="AVDD" pad="CN10_1"/>
-<connect gate="CN10" pin="D0/PG9/USART_A_RX" pad="CN10_16"/>
-<connect gate="CN10" pin="D1/PG14/USART_A_TX" pad="CN10_14"/>
-<connect gate="CN10" pin="D2/PF15" pad="CN10_12"/>
-<connect gate="CN10" pin="D26/PB6" pad="CN10_13"/>
-<connect gate="CN10" pin="D27/PB2" pad="CN10_15"/>
-<connect gate="CN10" pin="D28/PD13" pad="CN10_19"/>
-<connect gate="CN10" pin="D29/PD12" pad="CN10_21"/>
-<connect gate="CN10" pin="D3/PE13/TIMER_A_PWM3" pad="CN10_10"/>
-<connect gate="CN10" pin="D30/PD11" pad="CN10_23"/>
-<connect gate="CN10" pin="D31/PE2" pad="CN10_25"/>
-<connect gate="CN10" pin="D32/PA0/TIMER_C_PWM1" pad="CN10_29"/>
-<connect gate="CN10" pin="D33/PB0/TIMER_D_PWM1" pad="CN10_31"/>
-<connect gate="CN10" pin="D34/PE0/TIMER_B_ETR" pad="CN10_33"/>
-<connect gate="CN10" pin="D35/PB11/TIMER_C_PWM3" pad="CN10_34"/>
-<connect gate="CN10" pin="D36/PB10/TIMER_C_PWM2" pad="CN10_32"/>
-<connect gate="CN10" pin="D37/PE15/TIMER_A_BKIN1" pad="CN10_30"/>
-<connect gate="CN10" pin="D38/PE14" pad="CN10_28"/>
-<connect gate="CN10" pin="D39/PE12/TIMER_A_PWM3N" pad="CN10_26"/>
-<connect gate="CN10" pin="D4/PF14" pad="CN10_8"/>
-<connect gate="CN10" pin="D40/PE10/TIMER_A_PWM2N" pad="CN10_24"/>
-<connect gate="CN10" pin="D41/PE7/TIMER_A_ETR" pad="CN10_20"/>
-<connect gate="CN10" pin="D42/PE8/TIMER_A_PWM1N" pad="CN10_18"/>
-<connect gate="CN10" pin="D5/PE11/TIMER_A_PWM2" pad="CN10_6"/>
-<connect gate="CN10" pin="D6/PE9/TIMER_A_PWM1" pad="CN10_4"/>
-<connect gate="CN10" pin="D7/PF13" pad="CN10_2"/>
 <connect gate="CN10" pin="GND_CN10" pad="CN10_5 CN10_17 CN10_22 CN10_27"/>
+<connect gate="CN10" pin="PA0" pad="CN10_29"/>
+<connect gate="CN10" pin="PB0" pad="CN10_31"/>
+<connect gate="CN10" pin="PB1" pad="CN10_7"/>
+<connect gate="CN10" pin="PB10" pad="CN10_32"/>
+<connect gate="CN10" pin="PB11" pad="CN10_34"/>
+<connect gate="CN10" pin="PB2" pad="CN10_15"/>
+<connect gate="CN10" pin="PB6" pad="CN10_13"/>
+<connect gate="CN10" pin="PC2" pad="CN10_9"/>
+<connect gate="CN10" pin="PD11" pad="CN10_23"/>
+<connect gate="CN10" pin="PD12" pad="CN10_21"/>
+<connect gate="CN10" pin="PD13" pad="CN10_19"/>
+<connect gate="CN10" pin="PE0" pad="CN10_33"/>
+<connect gate="CN10" pin="PE10" pad="CN10_24"/>
+<connect gate="CN10" pin="PE11" pad="CN10_6"/>
+<connect gate="CN10" pin="PE12" pad="CN10_26"/>
+<connect gate="CN10" pin="PE13" pad="CN10_10"/>
+<connect gate="CN10" pin="PE14" pad="CN10_28"/>
+<connect gate="CN10" pin="PE15" pad="CN10_30"/>
+<connect gate="CN10" pin="PE2" pad="CN10_25"/>
+<connect gate="CN10" pin="PE7" pad="CN10_20"/>
+<connect gate="CN10" pin="PE8" pad="CN10_18"/>
+<connect gate="CN10" pin="PE9" pad="CN10_4"/>
+<connect gate="CN10" pin="PF13" pad="CN10_2"/>
+<connect gate="CN10" pin="PF14" pad="CN10_8"/>
+<connect gate="CN10" pin="PF15" pad="CN10_12"/>
+<connect gate="CN10" pin="PF4" pad="CN10_11"/>
+<connect gate="CN10" pin="PG14" pad="CN10_14"/>
+<connect gate="CN10" pin="PG9" pad="CN10_16"/>
 <connect gate="CN11" pin="+3.3V" pad="CN11_16"/>
 <connect gate="CN11" pin="+5V" pad="CN11_18"/>
 <connect gate="CN11" pin="BOOT0" pad="CN11_7"/>
@@ -1980,68 +1980,68 @@
 <connect gate="CN12" pin="PG8" pad="CN12_66"/>
 <connect gate="CN12" pin="U5V" pad="CN12_8"/>
 <connect gate="CN7" pin="AVDD" pad="CN7_6"/>
-<connect gate="CN7" pin="D10/PD14/SPI_A_CS/TIM_B_PWM3" pad="CN7_16"/>
-<connect gate="CN7" pin="D11/ETH/PA7/SPI_A_MOSI/TIM_E_PWM1" pad="CN7_14"/>
-<connect gate="CN7" pin="D12/PA6/SPI_A_MISO" pad="CN7_12"/>
-<connect gate="CN7" pin="D13/PA5/SPI_A_SCK" pad="CN7_10"/>
-<connect gate="CN7" pin="D14/PB9/I2C_A_SDA" pad="CN7_4"/>
-<connect gate="CN7" pin="D15/PB8/I2C_A_SCL" pad="CN7_2"/>
-<connect gate="CN7" pin="D16/PC6/I2S_A_MCK" pad="CN7_1"/>
-<connect gate="CN7" pin="D17/PB15/I2S_A_SD" pad="CN7_3"/>
-<connect gate="CN7" pin="D18/PB13/I2S_A_CK" pad="CN7_5"/>
-<connect gate="CN7" pin="D19/PB12/I2S_A_WS" pad="CN7_7"/>
-<connect gate="CN7" pin="D20/PA15/I2S_B_WS" pad="CN7_9"/>
-<connect gate="CN7" pin="D21/PC7/I2S_B_MCK" pad="CN7_11"/>
-<connect gate="CN7" pin="D22/PB5/I2S_B_SD/SPI_B_MOSI" pad="CN7_13"/>
-<connect gate="CN7" pin="D23/PB3/I2S_B_CK/SPI_B_SCK" pad="CN7_15"/>
-<connect gate="CN7" pin="D24/PA4/SPI_B_NSS" pad="CN7_17"/>
-<connect gate="CN7" pin="D25/PB4/SPI_B_MISO" pad="CN7_19"/>
-<connect gate="CN7" pin="D8/PF12" pad="CN7_20"/>
-<connect gate="CN7" pin="D9/PD15/TIMER_B_PWM2" pad="CN7_18"/>
-<connect gate="CN7" pin="GND_CN7" pad="CN7_8"/>
+<connect gate="CN7" pin="GND" pad="CN7_8"/>
+<connect gate="CN7" pin="PA15" pad="CN7_9"/>
+<connect gate="CN7" pin="PA4" pad="CN7_17"/>
+<connect gate="CN7" pin="PA5" pad="CN7_10"/>
+<connect gate="CN7" pin="PA6" pad="CN7_12"/>
+<connect gate="CN7" pin="PA7" pad="CN7_14"/>
+<connect gate="CN7" pin="PB12" pad="CN7_7"/>
+<connect gate="CN7" pin="PB13" pad="CN7_5"/>
+<connect gate="CN7" pin="PB15" pad="CN7_3"/>
+<connect gate="CN7" pin="PB3" pad="CN7_15"/>
+<connect gate="CN7" pin="PB4" pad="CN7_19"/>
+<connect gate="CN7" pin="PB5" pad="CN7_13"/>
+<connect gate="CN7" pin="PB8" pad="CN7_2"/>
+<connect gate="CN7" pin="PB9" pad="CN7_4"/>
+<connect gate="CN7" pin="PC6" pad="CN7_1"/>
+<connect gate="CN7" pin="PC7" pad="CN7_11"/>
+<connect gate="CN7" pin="PD14" pad="CN7_16"/>
+<connect gate="CN7" pin="PD15" pad="CN7_18"/>
+<connect gate="CN7" pin="PF12" pad="CN7_20"/>
 <connect gate="CN8" pin="+3.3V" pad="CN8_7"/>
 <connect gate="CN8" pin="+5V" pad="CN8_9"/>
-<connect gate="CN8" pin="D43/PC8/SDMMC_D0" pad="CN8_2"/>
-<connect gate="CN8" pin="D44/PC9/SDMMC_D1/I2S_A_CKIN" pad="CN8_4"/>
-<connect gate="CN8" pin="D45/PC10/SDMMC_D2" pad="CN8_6"/>
-<connect gate="CN8" pin="D46/PC11/SDMMC_D3" pad="CN8_8"/>
-<connect gate="CN8" pin="D47/PC12/SDMMC_CK" pad="CN8_10"/>
-<connect gate="CN8" pin="D48/PD2/SDMMC_CMD" pad="CN8_12"/>
-<connect gate="CN8" pin="D49/PG2" pad="CN8_14"/>
-<connect gate="CN8" pin="D50/PG3" pad="CN8_16"/>
-<connect gate="CN8" pin="GND_CN8" pad="CN8_11 CN8_13"/>
+<connect gate="CN8" pin="GND" pad="CN8_11 CN8_13"/>
 <connect gate="CN8" pin="IOREF" pad="CN8_3"/>
+<connect gate="CN8" pin="PC10" pad="CN8_6"/>
+<connect gate="CN8" pin="PC11" pad="CN8_8"/>
+<connect gate="CN8" pin="PC12" pad="CN8_10"/>
+<connect gate="CN8" pin="PC8" pad="CN8_2"/>
+<connect gate="CN8" pin="PC9" pad="CN8_4"/>
+<connect gate="CN8" pin="PD2" pad="CN8_12"/>
+<connect gate="CN8" pin="PG2" pad="CN8_14"/>
+<connect gate="CN8" pin="PG3" pad="CN8_16"/>
 <connect gate="CN8" pin="RESET" pad="CN8_5"/>
 <connect gate="CN8" pin="VIN" pad="CN8_15"/>
-<connect gate="CN9" pin="A0/PA3" pad="CN9_1"/>
-<connect gate="CN9" pin="A1/PC0" pad="CN9_3"/>
-<connect gate="CN9" pin="A2/PC3" pad="CN9_5"/>
-<connect gate="CN9" pin="A3/PF3" pad="CN9_7"/>
-<connect gate="CN9" pin="A4/PF5" pad="CN9_9"/>
-<connect gate="CN9" pin="A5/PF10" pad="CN9_11"/>
-<connect gate="CN9" pin="D51/PD7/USART_B_SCLK" pad="CN9_2"/>
-<connect gate="CN9" pin="D52/PD6/USART_B_RX" pad="CN9_4"/>
-<connect gate="CN9" pin="D53/PD5/USART_B_TX" pad="CN9_6"/>
-<connect gate="CN9" pin="D54/PD4/USART_B_RTS" pad="CN9_8"/>
-<connect gate="CN9" pin="D55/PD3/USART_B_CTS" pad="CN9_10"/>
-<connect gate="CN9" pin="D56/PE2/SAI_A_MCLK" pad="CN9_14"/>
-<connect gate="CN9" pin="D57/PE4/SAI_A_FS" pad="CN9_16"/>
-<connect gate="CN9" pin="D58/PE5/SAI_A_SCK" pad="CN9_18"/>
-<connect gate="CN9" pin="D59/PE6/SAI_A_SD" pad="CN9_20"/>
-<connect gate="CN9" pin="D60/PE3/SAI_B_SD" pad="CN9_22"/>
-<connect gate="CN9" pin="D61/PF8/SAI_B_SCK" pad="CN9_24"/>
-<connect gate="CN9" pin="D62/PF7/SAI_B_MCLK" pad="CN9_26"/>
-<connect gate="CN9" pin="D63/PF9/SAI_B_FS" pad="CN9_28"/>
-<connect gate="CN9" pin="D64/PG1" pad="CN9_30"/>
-<connect gate="CN9" pin="D65/PG0" pad="CN9_29"/>
-<connect gate="CN9" pin="D66/PD1/CAN_TX" pad="CN9_27"/>
-<connect gate="CN9" pin="D67/PD0/CAN_RX" pad="CN9_25"/>
-<connect gate="CN9" pin="D68/PF0/I2C_B_SDA" pad="CN9_21"/>
-<connect gate="CN9" pin="D69/PF1/I2C_B_SCL" pad="CN9_19"/>
-<connect gate="CN9" pin="D70/PF2/I2C_B_SMBA" pad="CN9_17"/>
-<connect gate="CN9" pin="D71/PA7" pad="CN9_15"/>
-<connect gate="CN9" pin="D72/NC" pad="CN9_13"/>
-<connect gate="CN9" pin="GND_CN9" pad="CN9_12 CN9_23"/>
+<connect gate="CN9" pin="GND" pad="CN9_12 CN9_23"/>
+<connect gate="CN9" pin="NC" pad="CN9_13"/>
+<connect gate="CN9" pin="PA3" pad="CN9_1"/>
+<connect gate="CN9" pin="PA7" pad="CN9_15"/>
+<connect gate="CN9" pin="PC0" pad="CN9_3"/>
+<connect gate="CN9" pin="PC3" pad="CN9_5"/>
+<connect gate="CN9" pin="PD0" pad="CN9_25"/>
+<connect gate="CN9" pin="PD1" pad="CN9_27"/>
+<connect gate="CN9" pin="PD3" pad="CN9_10"/>
+<connect gate="CN9" pin="PD4" pad="CN9_8"/>
+<connect gate="CN9" pin="PD5" pad="CN9_6"/>
+<connect gate="CN9" pin="PD6" pad="CN9_4"/>
+<connect gate="CN9" pin="PD7" pad="CN9_2"/>
+<connect gate="CN9" pin="PE2" pad="CN9_14"/>
+<connect gate="CN9" pin="PE3" pad="CN9_22"/>
+<connect gate="CN9" pin="PE4" pad="CN9_16"/>
+<connect gate="CN9" pin="PE5" pad="CN9_18"/>
+<connect gate="CN9" pin="PE6" pad="CN9_20"/>
+<connect gate="CN9" pin="PF0" pad="CN9_21"/>
+<connect gate="CN9" pin="PF1" pad="CN9_19"/>
+<connect gate="CN9" pin="PF10" pad="CN9_11"/>
+<connect gate="CN9" pin="PF2" pad="CN9_17"/>
+<connect gate="CN9" pin="PF3" pad="CN9_7"/>
+<connect gate="CN9" pin="PF5" pad="CN9_9"/>
+<connect gate="CN9" pin="PF7" pad="CN9_26"/>
+<connect gate="CN9" pin="PF8" pad="CN9_24"/>
+<connect gate="CN9" pin="PF9" pad="CN9_28"/>
+<connect gate="CN9" pin="PG0" pad="CN9_29"/>
+<connect gate="CN9" pin="PG1" pad="CN9_30"/>
 </connects>
 <technologies>
 <technology name="">
@@ -2208,100 +2208,100 @@
 <devices>
 <device name="" package="MODULE_NUCLEO-F429ZI_ZIO">
 <connects>
-<connect gate="CN10" pin="A6/PB1/ADC_A_IN" pad="CN10_7"/>
-<connect gate="CN10" pin="A7/PC2/ADC_B_IN" pad="CN10_9"/>
-<connect gate="CN10" pin="A8/PF4/ADC_C_IN" pad="CN10_11"/>
 <connect gate="CN10" pin="AGND" pad="CN10_3"/>
 <connect gate="CN10" pin="AVDD" pad="CN10_1"/>
-<connect gate="CN10" pin="D0/PG9/USART_A_RX" pad="CN10_16"/>
-<connect gate="CN10" pin="D1/PG14/USART_A_TX" pad="CN10_14"/>
-<connect gate="CN10" pin="D2/PF15" pad="CN10_12"/>
-<connect gate="CN10" pin="D26/PB6" pad="CN10_13"/>
-<connect gate="CN10" pin="D27/PB2" pad="CN10_15"/>
-<connect gate="CN10" pin="D28/PD13" pad="CN10_19"/>
-<connect gate="CN10" pin="D29/PD12" pad="CN10_21"/>
-<connect gate="CN10" pin="D3/PE13/TIMER_A_PWM3" pad="CN10_10"/>
-<connect gate="CN10" pin="D30/PD11" pad="CN10_23"/>
-<connect gate="CN10" pin="D31/PE2" pad="CN10_25"/>
-<connect gate="CN10" pin="D32/PA0/TIMER_C_PWM1" pad="CN10_29"/>
-<connect gate="CN10" pin="D33/PB0/TIMER_D_PWM1" pad="CN10_31"/>
-<connect gate="CN10" pin="D34/PE0/TIMER_B_ETR" pad="CN10_33"/>
-<connect gate="CN10" pin="D35/PB11/TIMER_C_PWM3" pad="CN10_34"/>
-<connect gate="CN10" pin="D36/PB10/TIMER_C_PWM2" pad="CN10_32"/>
-<connect gate="CN10" pin="D37/PE15/TIMER_A_BKIN1" pad="CN10_30"/>
-<connect gate="CN10" pin="D38/PE14" pad="CN10_28"/>
-<connect gate="CN10" pin="D39/PE12/TIMER_A_PWM3N" pad="CN10_26"/>
-<connect gate="CN10" pin="D4/PF14" pad="CN10_8"/>
-<connect gate="CN10" pin="D40/PE10/TIMER_A_PWM2N" pad="CN10_24"/>
-<connect gate="CN10" pin="D41/PE7/TIMER_A_ETR" pad="CN10_20"/>
-<connect gate="CN10" pin="D42/PE8/TIMER_A_PWM1N" pad="CN10_18"/>
-<connect gate="CN10" pin="D5/PE11/TIMER_A_PWM2" pad="CN10_6"/>
-<connect gate="CN10" pin="D6/PE9/TIMER_A_PWM1" pad="CN10_4"/>
-<connect gate="CN10" pin="D7/PF13" pad="CN10_2"/>
 <connect gate="CN10" pin="GND_CN10" pad="CN10_5 CN10_17 CN10_22 CN10_27"/>
+<connect gate="CN10" pin="PA0" pad="CN10_29"/>
+<connect gate="CN10" pin="PB0" pad="CN10_31"/>
+<connect gate="CN10" pin="PB1" pad="CN10_7"/>
+<connect gate="CN10" pin="PB10" pad="CN10_32"/>
+<connect gate="CN10" pin="PB11" pad="CN10_34"/>
+<connect gate="CN10" pin="PB2" pad="CN10_15"/>
+<connect gate="CN10" pin="PB6" pad="CN10_13"/>
+<connect gate="CN10" pin="PC2" pad="CN10_9"/>
+<connect gate="CN10" pin="PD11" pad="CN10_23"/>
+<connect gate="CN10" pin="PD12" pad="CN10_21"/>
+<connect gate="CN10" pin="PD13" pad="CN10_19"/>
+<connect gate="CN10" pin="PE0" pad="CN10_33"/>
+<connect gate="CN10" pin="PE10" pad="CN10_24"/>
+<connect gate="CN10" pin="PE11" pad="CN10_6"/>
+<connect gate="CN10" pin="PE12" pad="CN10_26"/>
+<connect gate="CN10" pin="PE13" pad="CN10_10"/>
+<connect gate="CN10" pin="PE14" pad="CN10_28"/>
+<connect gate="CN10" pin="PE15" pad="CN10_30"/>
+<connect gate="CN10" pin="PE2" pad="CN10_25"/>
+<connect gate="CN10" pin="PE7" pad="CN10_20"/>
+<connect gate="CN10" pin="PE8" pad="CN10_18"/>
+<connect gate="CN10" pin="PE9" pad="CN10_4"/>
+<connect gate="CN10" pin="PF13" pad="CN10_2"/>
+<connect gate="CN10" pin="PF14" pad="CN10_8"/>
+<connect gate="CN10" pin="PF15" pad="CN10_12"/>
+<connect gate="CN10" pin="PF4" pad="CN10_11"/>
+<connect gate="CN10" pin="PG14" pad="CN10_14"/>
+<connect gate="CN10" pin="PG9" pad="CN10_16"/>
 <connect gate="CN7" pin="AVDD" pad="CN7_6"/>
-<connect gate="CN7" pin="D10/PD14/SPI_A_CS/TIM_B_PWM3" pad="CN7_16"/>
-<connect gate="CN7" pin="D11/ETH/PA7/SPI_A_MOSI/TIM_E_PWM1" pad="CN7_14"/>
-<connect gate="CN7" pin="D12/PA6/SPI_A_MISO" pad="CN7_12"/>
-<connect gate="CN7" pin="D13/PA5/SPI_A_SCK" pad="CN7_10"/>
-<connect gate="CN7" pin="D14/PB9/I2C_A_SDA" pad="CN7_4"/>
-<connect gate="CN7" pin="D15/PB8/I2C_A_SCL" pad="CN7_2"/>
-<connect gate="CN7" pin="D16/PC6/I2S_A_MCK" pad="CN7_1"/>
-<connect gate="CN7" pin="D17/PB15/I2S_A_SD" pad="CN7_3"/>
-<connect gate="CN7" pin="D18/PB13/I2S_A_CK" pad="CN7_5"/>
-<connect gate="CN7" pin="D19/PB12/I2S_A_WS" pad="CN7_7"/>
-<connect gate="CN7" pin="D20/PA15/I2S_B_WS" pad="CN7_9"/>
-<connect gate="CN7" pin="D21/PC7/I2S_B_MCK" pad="CN7_11"/>
-<connect gate="CN7" pin="D22/PB5/I2S_B_SD/SPI_B_MOSI" pad="CN7_13"/>
-<connect gate="CN7" pin="D23/PB3/I2S_B_CK/SPI_B_SCK" pad="CN7_15"/>
-<connect gate="CN7" pin="D24/PA4/SPI_B_NSS" pad="CN7_17"/>
-<connect gate="CN7" pin="D25/PB4/SPI_B_MISO" pad="CN7_19"/>
-<connect gate="CN7" pin="D8/PF12" pad="CN7_20"/>
-<connect gate="CN7" pin="D9/PD15/TIMER_B_PWM2" pad="CN7_18"/>
-<connect gate="CN7" pin="GND_CN7" pad="CN7_8"/>
+<connect gate="CN7" pin="GND" pad="CN7_8"/>
+<connect gate="CN7" pin="PA15" pad="CN7_9"/>
+<connect gate="CN7" pin="PA4" pad="CN7_17"/>
+<connect gate="CN7" pin="PA5" pad="CN7_10"/>
+<connect gate="CN7" pin="PA6" pad="CN7_12"/>
+<connect gate="CN7" pin="PA7" pad="CN7_14"/>
+<connect gate="CN7" pin="PB12" pad="CN7_7"/>
+<connect gate="CN7" pin="PB13" pad="CN7_5"/>
+<connect gate="CN7" pin="PB15" pad="CN7_3"/>
+<connect gate="CN7" pin="PB3" pad="CN7_15"/>
+<connect gate="CN7" pin="PB4" pad="CN7_19"/>
+<connect gate="CN7" pin="PB5" pad="CN7_13"/>
+<connect gate="CN7" pin="PB8" pad="CN7_2"/>
+<connect gate="CN7" pin="PB9" pad="CN7_4"/>
+<connect gate="CN7" pin="PC6" pad="CN7_1"/>
+<connect gate="CN7" pin="PC7" pad="CN7_11"/>
+<connect gate="CN7" pin="PD14" pad="CN7_16"/>
+<connect gate="CN7" pin="PD15" pad="CN7_18"/>
+<connect gate="CN7" pin="PF12" pad="CN7_20"/>
 <connect gate="CN8" pin="+3.3V" pad="CN8_7"/>
 <connect gate="CN8" pin="+5V" pad="CN8_9"/>
-<connect gate="CN8" pin="D43/PC8/SDMMC_D0" pad="CN8_2"/>
-<connect gate="CN8" pin="D44/PC9/SDMMC_D1/I2S_A_CKIN" pad="CN8_4"/>
-<connect gate="CN8" pin="D45/PC10/SDMMC_D2" pad="CN8_6"/>
-<connect gate="CN8" pin="D46/PC11/SDMMC_D3" pad="CN8_8"/>
-<connect gate="CN8" pin="D47/PC12/SDMMC_CK" pad="CN8_10"/>
-<connect gate="CN8" pin="D48/PD2/SDMMC_CMD" pad="CN8_12"/>
-<connect gate="CN8" pin="D49/PG2" pad="CN8_14"/>
-<connect gate="CN8" pin="D50/PG3" pad="CN8_16"/>
-<connect gate="CN8" pin="GND_CN8" pad="CN8_11 CN8_13"/>
+<connect gate="CN8" pin="GND" pad="CN8_11 CN8_13"/>
 <connect gate="CN8" pin="IOREF" pad="CN8_3"/>
+<connect gate="CN8" pin="PC10" pad="CN8_6"/>
+<connect gate="CN8" pin="PC11" pad="CN8_8"/>
+<connect gate="CN8" pin="PC12" pad="CN8_10"/>
+<connect gate="CN8" pin="PC8" pad="CN8_2"/>
+<connect gate="CN8" pin="PC9" pad="CN8_4"/>
+<connect gate="CN8" pin="PD2" pad="CN8_12"/>
+<connect gate="CN8" pin="PG2" pad="CN8_14"/>
+<connect gate="CN8" pin="PG3" pad="CN8_16"/>
 <connect gate="CN8" pin="RESET" pad="CN8_5"/>
 <connect gate="CN8" pin="VIN" pad="CN8_15"/>
-<connect gate="CN9" pin="A0/PA3" pad="CN9_1"/>
-<connect gate="CN9" pin="A1/PC0" pad="CN9_3"/>
-<connect gate="CN9" pin="A2/PC3" pad="CN9_5"/>
-<connect gate="CN9" pin="A3/PF3" pad="CN9_7"/>
-<connect gate="CN9" pin="A4/PF5" pad="CN9_9"/>
-<connect gate="CN9" pin="A5/PF10" pad="CN9_11"/>
-<connect gate="CN9" pin="D51/PD7/USART_B_SCLK" pad="CN9_2"/>
-<connect gate="CN9" pin="D52/PD6/USART_B_RX" pad="CN9_4"/>
-<connect gate="CN9" pin="D53/PD5/USART_B_TX" pad="CN9_6"/>
-<connect gate="CN9" pin="D54/PD4/USART_B_RTS" pad="CN9_8"/>
-<connect gate="CN9" pin="D55/PD3/USART_B_CTS" pad="CN9_10"/>
-<connect gate="CN9" pin="D56/PE2/SAI_A_MCLK" pad="CN9_14"/>
-<connect gate="CN9" pin="D57/PE4/SAI_A_FS" pad="CN9_16"/>
-<connect gate="CN9" pin="D58/PE5/SAI_A_SCK" pad="CN9_18"/>
-<connect gate="CN9" pin="D59/PE6/SAI_A_SD" pad="CN9_20"/>
-<connect gate="CN9" pin="D60/PE3/SAI_B_SD" pad="CN9_22"/>
-<connect gate="CN9" pin="D61/PF8/SAI_B_SCK" pad="CN9_24"/>
-<connect gate="CN9" pin="D62/PF7/SAI_B_MCLK" pad="CN9_26"/>
-<connect gate="CN9" pin="D63/PF9/SAI_B_FS" pad="CN9_28"/>
-<connect gate="CN9" pin="D64/PG1" pad="CN9_30"/>
-<connect gate="CN9" pin="D65/PG0" pad="CN9_29"/>
-<connect gate="CN9" pin="D66/PD1/CAN_TX" pad="CN9_27"/>
-<connect gate="CN9" pin="D67/PD0/CAN_RX" pad="CN9_25"/>
-<connect gate="CN9" pin="D68/PF0/I2C_B_SDA" pad="CN9_21"/>
-<connect gate="CN9" pin="D69/PF1/I2C_B_SCL" pad="CN9_19"/>
-<connect gate="CN9" pin="D70/PF2/I2C_B_SMBA" pad="CN9_17"/>
-<connect gate="CN9" pin="D71/PA7" pad="CN9_15"/>
-<connect gate="CN9" pin="D72/NC" pad="CN9_13"/>
-<connect gate="CN9" pin="GND_CN9" pad="CN9_12 CN9_23"/>
+<connect gate="CN9" pin="GND" pad="CN9_12 CN9_23"/>
+<connect gate="CN9" pin="NC" pad="CN9_13"/>
+<connect gate="CN9" pin="PA3" pad="CN9_1"/>
+<connect gate="CN9" pin="PA7" pad="CN9_15"/>
+<connect gate="CN9" pin="PC0" pad="CN9_3"/>
+<connect gate="CN9" pin="PC3" pad="CN9_5"/>
+<connect gate="CN9" pin="PD0" pad="CN9_25"/>
+<connect gate="CN9" pin="PD1" pad="CN9_27"/>
+<connect gate="CN9" pin="PD3" pad="CN9_10"/>
+<connect gate="CN9" pin="PD4" pad="CN9_8"/>
+<connect gate="CN9" pin="PD5" pad="CN9_6"/>
+<connect gate="CN9" pin="PD6" pad="CN9_4"/>
+<connect gate="CN9" pin="PD7" pad="CN9_2"/>
+<connect gate="CN9" pin="PE2" pad="CN9_14"/>
+<connect gate="CN9" pin="PE3" pad="CN9_22"/>
+<connect gate="CN9" pin="PE4" pad="CN9_16"/>
+<connect gate="CN9" pin="PE5" pad="CN9_18"/>
+<connect gate="CN9" pin="PE6" pad="CN9_20"/>
+<connect gate="CN9" pin="PF0" pad="CN9_21"/>
+<connect gate="CN9" pin="PF1" pad="CN9_19"/>
+<connect gate="CN9" pin="PF10" pad="CN9_11"/>
+<connect gate="CN9" pin="PF2" pad="CN9_17"/>
+<connect gate="CN9" pin="PF3" pad="CN9_7"/>
+<connect gate="CN9" pin="PF5" pad="CN9_9"/>
+<connect gate="CN9" pin="PF7" pad="CN9_26"/>
+<connect gate="CN9" pin="PF8" pad="CN9_24"/>
+<connect gate="CN9" pin="PF9" pad="CN9_28"/>
+<connect gate="CN9" pin="PG0" pad="CN9_29"/>
+<connect gate="CN9" pin="PG1" pad="CN9_30"/>
 </connects>
 <technologies>
 <technology name=""/>
