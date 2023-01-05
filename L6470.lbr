@@ -72,7 +72,10 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
+<description>&lt;b&gt;L6470&lt;/b&gt;&lt;br&gt;
+Fully integrated microstepping motor driver with motion engine
+and SPI&lt;p&gt;
+&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
 <packages>
 <package name="POWER-SO36">
 <smd name="1" x="-5.525" y="-6.8" dx="0.46" dy="1.1" layer="1"/>
@@ -111,7 +114,7 @@
 <smd name="34" x="-4.225" y="6.8" dx="0.46" dy="1.1" layer="1"/>
 <smd name="35" x="-4.875" y="6.8" dx="0.46" dy="1.1" layer="1"/>
 <smd name="36" x="-5.525" y="6.8" dx="0.46" dy="1.1" layer="1"/>
-<smd name="PAD" x="0" y="0" dx="9.5" dy="6.3" layer="1" thermals="no" cream="no"/>
+<smd name="EXP" x="0" y="0" dx="9.5" dy="6.3" layer="1" thermals="no" cream="no"/>
 <wire x1="-6.5" y1="-5.45" x2="7.9" y2="-5.45" width="0.2" layer="21"/>
 <wire x1="7.9" y1="-5.45" x2="7.9" y2="5.45" width="0.2" layer="21"/>
 <wire x1="7.9" y1="5.45" x2="-7.9" y2="5.45" width="0.2" layer="21"/>
@@ -119,41 +122,212 @@
 <wire x1="-6.5" y1="-5.45" x2="-7.9" y2="-4.05" width="0.2" layer="21"/>
 <text x="-8.89" y="-3.81" size="1.778" layer="25" rot="SR90">&gt;NAME</text>
 </package>
+<package name="HTSSOP28" urn="urn:adsk.eagle:footprint:16314/1" locally_modified="yes">
+<description>&lt;b&gt;HTSSOP28&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-4.85" y1="-2.2" x2="4.85" y2="-2.2" width="0.15" layer="21"/>
+<wire x1="4.85" y1="2.2" x2="4.85" y2="-2.2" width="0.15" layer="21"/>
+<wire x1="4.85" y1="2.2" x2="-4.85" y2="2.2" width="0.15" layer="21"/>
+<wire x1="-4.85" y1="-2.2" x2="-4.85" y2="2.2" width="0.15" layer="21"/>
+<circle x="-3.9256" y="-1.3442" radius="0.401" width="0" layer="21"/>
+<smd name="1" x="-4.225" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="2" x="-3.575" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="3" x="-2.925" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="4" x="-2.275" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="5" x="-1.625" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="6" x="-0.975" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="7" x="-0.325" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="8" x="0.325" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="9" x="0.975" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="10" x="1.625" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="11" x="2.275" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="12" x="2.925" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="13" x="3.575" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="14" x="4.225" y="-3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="15" x="4.225" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="16" x="3.575" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="17" x="2.925" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="18" x="2.275" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="19" x="1.625" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="20" x="0.975" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="21" x="0.325" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="22" x="-0.325" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="23" x="-0.975" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="24" x="-1.625" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="25" x="-2.275" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="26" x="-2.925" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="27" x="-3.575" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="28" x="-4.225" y="3.0875" dx="0.35" dy="1" layer="1"/>
+<smd name="EXP" x="0" y="0" dx="5.5" dy="2.8" layer="1"/>
+<text x="-5.08" y="-2.54" size="1" layer="25" font="vector" ratio="16" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1" layer="27" font="vector" ratio="16" rot="R90" align="top-left">&gt;VALUE</text>
+<rectangle x1="-4.375" y1="-3.3" x2="-4.075" y2="-2.25" layer="51"/>
+<rectangle x1="-3.725" y1="-3.3" x2="-3.425" y2="-2.25" layer="51"/>
+<rectangle x1="-3.075" y1="-3.3" x2="-2.775" y2="-2.25" layer="51"/>
+<rectangle x1="-2.425" y1="-3.3" x2="-2.125" y2="-2.25" layer="51"/>
+<rectangle x1="-1.775" y1="-3.3" x2="-1.475" y2="-2.25" layer="51"/>
+<rectangle x1="-1.125" y1="-3.3" x2="-0.825" y2="-2.25" layer="51"/>
+<rectangle x1="-0.475" y1="-3.3" x2="-0.175" y2="-2.25" layer="51"/>
+<rectangle x1="0.175" y1="-3.3" x2="0.475" y2="-2.25" layer="51"/>
+<rectangle x1="0.825" y1="-3.3" x2="1.125" y2="-2.25" layer="51"/>
+<rectangle x1="1.475" y1="-3.3" x2="1.775" y2="-2.25" layer="51"/>
+<rectangle x1="2.125" y1="-3.3" x2="2.425" y2="-2.25" layer="51"/>
+<rectangle x1="2.775" y1="-3.3" x2="3.075" y2="-2.25" layer="51"/>
+<rectangle x1="3.425" y1="-3.3" x2="3.725" y2="-2.25" layer="51"/>
+<rectangle x1="4.075" y1="-3.3" x2="4.375" y2="-2.25" layer="51"/>
+<rectangle x1="4.075" y1="2.25" x2="4.375" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="3.425" y1="2.25" x2="3.725" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="2.775" y1="2.25" x2="3.075" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="2.125" y1="2.25" x2="2.425" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="1.475" y1="2.25" x2="1.775" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="0.825" y1="2.25" x2="1.125" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="0.175" y1="2.25" x2="0.475" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-0.475" y1="2.25" x2="-0.175" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-1.125" y1="2.25" x2="-0.825" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-1.775" y1="2.25" x2="-1.475" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-2.425" y1="2.25" x2="-2.125" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-3.075" y1="2.25" x2="-2.775" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-3.725" y1="2.25" x2="-3.425" y2="3.3" layer="51" rot="R180"/>
+<rectangle x1="-4.375" y1="2.25" x2="-4.075" y2="3.3" layer="51" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L6470">
-<pin name="!STBY/RST!" x="-20.32" y="25.4" length="middle"/>
-<pin name="SW" x="-20.32" y="30.48" length="middle"/>
-<pin name="ADCIN" x="-25.4" y="0" length="middle"/>
-<pin name="VREG" x="-25.4" y="5.08" length="middle"/>
-<pin name="OSCIN" x="-25.4" y="10.16" length="middle"/>
-<pin name="OSCOUT" x="-25.4" y="15.24" length="middle"/>
-<pin name="AGND" x="-25.4" y="20.32" length="middle"/>
-<pin name="CP" x="-20.32" y="35.56" length="middle"/>
-<pin name="VBOOT" x="-20.32" y="40.64" length="middle"/>
-<pin name="STCK" x="-20.32" y="45.72" length="middle"/>
-<pin name="!FLAG!" x="-5.08" y="50.8" length="middle"/>
-<pin name="!CS!" x="-5.08" y="55.88" length="middle"/>
-<pin name="!BUSY!/SYNC" x="-5.08" y="60.96" length="middle"/>
-<pin name="GND" x="-5.08" y="66.04" length="middle"/>
-<pin name="SDI" x="-5.08" y="71.12" length="middle"/>
-<pin name="CK" x="-5.08" y="76.2" length="middle"/>
-<pin name="SDO" x="-5.08" y="81.28" length="middle"/>
-<pin name="VDD" x="-5.08" y="86.36" length="middle"/>
-<pin name="PGND" x="22.86" y="109.22" length="middle"/>
-<pin name="OUT1A" x="22.86" y="99.06" length="middle"/>
-<pin name="OUT1B" x="22.86" y="124.46" length="middle"/>
-<pin name="OUT2A" x="22.86" y="93.98" length="middle"/>
-<pin name="OUT2B" x="22.86" y="119.38" length="middle"/>
-<pin name="PVCC" x="22.86" y="114.3" length="middle"/>
+<pin name="!STBY/RST!" x="-33.02" y="10.16" length="middle"/>
+<pin name="SW" x="-33.02" y="-7.62" length="middle"/>
+<pin name="ADCIN" x="33.02" y="17.78" length="middle" rot="R180"/>
+<pin name="VREG" x="-22.86" y="33.02" length="middle" rot="R270"/>
+<pin name="OSCIN" x="-33.02" y="-12.7" length="middle"/>
+<pin name="OSCOUT" x="-33.02" y="-17.78" length="middle"/>
+<pin name="AGND" x="-7.62" y="-33.02" length="middle" rot="R90"/>
+<pin name="CP" x="5.08" y="33.02" length="middle" rot="R270"/>
+<pin name="VBOOT" x="-2.54" y="33.02" length="middle" rot="R270"/>
+<pin name="STCK" x="-33.02" y="12.7" length="middle"/>
+<pin name="!FLAG!" x="-33.02" y="17.78" length="middle"/>
+<pin name="!CS!" x="-33.02" y="5.08" length="middle"/>
+<pin name="!BUSY!/SYNC" x="-33.02" y="15.24" length="middle"/>
+<pin name="DGND" x="-12.7" y="-33.02" length="middle" rot="R90"/>
+<pin name="SDI" x="-33.02" y="-2.54" length="middle"/>
+<pin name="CK" x="-33.02" y="2.54" length="middle"/>
+<pin name="SDO" x="-33.02" y="0" length="middle"/>
+<pin name="VDD" x="-7.62" y="33.02" length="middle" rot="R270"/>
+<pin name="PGND" x="17.78" y="-33.02" length="middle" rot="R90"/>
+<pin name="OUT1A" x="33.02" y="2.54" length="middle" rot="R180"/>
+<pin name="OUT1B" x="33.02" y="-12.7" length="middle" rot="R180"/>
+<pin name="OUT2A" x="33.02" y="-2.54" length="middle" rot="R180"/>
+<pin name="OUT2B" x="33.02" y="-17.78" length="middle" rot="R180"/>
+<pin name="VSA" x="17.78" y="33.02" length="middle" rot="R270"/>
+<pin name="VSB" x="12.7" y="33.02" length="middle" rot="R270"/>
+<wire x1="-27.94" y1="27.94" x2="27.94" y2="27.94" width="0.1524" layer="94"/>
+<wire x1="27.94" y1="27.94" x2="27.94" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="27.94" y1="-27.94" x2="-27.94" y2="-27.94" width="0.1524" layer="94"/>
+<wire x1="-27.94" y1="-27.94" x2="-27.94" y2="27.94" width="0.1524" layer="94"/>
+<text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="0" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="L6470">
+<deviceset name="L6470*" prefix="IC">
+<description>&lt;b&gt;Description&lt;/b&gt;&lt;br&gt;
+The L6470 device, realized in analog mixed
+signal technology, is an advanced fully integrated
+solution suitable for driving two-phase bipolar
+stepper motors with microstepping. It integrates
+a dual low RDS(on) DMOS full bridge with all of the
+power switches equipped with an accurate onchip current sensing circuitry suitable for nondissipative current control and overcurrent
+protection. Thanks to a unique control system,
+a true 1/128 steps resolution is achieved. The
+digital control core can generate user defined
+motion profiles with acceleration, deceleration,
+speed or target position, easily programmed
+through a dedicated registers set. All commands
+and data registers, including those used to set
+analogue values (i.e. current control value,
+current protection trip point, deadtime, PWM
+frequency, etc.) are sent through a standard
+5-Mbit/s SPI. A very rich set of protections
+(thermal, low bus voltage, overcurrent, motor
+stall) allows the design of a fully protected
+application, as required by the most demanding
+motor control applications.&lt;p&gt;
+&lt;b&gt;Applications&lt;/b&gt;&lt;br&gt;
+ Bipolar stepper motors&lt;p&gt;
+&lt;b&gt;Features&lt;/b&gt;&lt;br&gt;
+ Operating voltage: 8 - 45 V&lt;br&gt;
+ 7.0 A out peak current (3.0 A r.m.s.)&lt;br&gt;
+ Low RDS(on) Power MOSFETs&lt;br&gt;
+ Programmable speed profile and positioning&lt;br&gt;
+ Programmable power MOS slew rate&lt;br&gt;
+ Up to 1/128 microstepping&lt;br&gt;
+ Sensorless stall detection&lt;br&gt;
+ SPI interface&lt;br&gt;
+ Low quiescent and standby currents&lt;br&gt;
+ Programmable non-dissipative overcurrent&lt;br&gt;
+protection on high and low-side&lt;br&gt;
+ Two-levels of overtemperature protection &lt;br&gt;</description>
 <gates>
+<gate name="G$1" symbol="L6470" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="H" package="HTSSOP28">
+<connects>
+<connect gate="G$1" pin="!BUSY!/SYNC" pad="22"/>
+<connect gate="G$1" pin="!CS!" pad="23"/>
+<connect gate="G$1" pin="!FLAG!" pad="24"/>
+<connect gate="G$1" pin="!STBY/RST!" pad="3"/>
+<connect gate="G$1" pin="ADCIN" pad="5"/>
+<connect gate="G$1" pin="AGND" pad="9"/>
+<connect gate="G$1" pin="CK" pad="19"/>
+<connect gate="G$1" pin="CP" pad="10"/>
+<connect gate="G$1" pin="DGND" pad="21"/>
+<connect gate="G$1" pin="OSCIN" pad="7"/>
+<connect gate="G$1" pin="OSCOUT" pad="8"/>
+<connect gate="G$1" pin="OUT1A" pad="1"/>
+<connect gate="G$1" pin="OUT1B" pad="14"/>
+<connect gate="G$1" pin="OUT2A" pad="28"/>
+<connect gate="G$1" pin="OUT2B" pad="15"/>
+<connect gate="G$1" pin="PGND" pad="13 27 EXP"/>
+<connect gate="G$1" pin="SDI" pad="20"/>
+<connect gate="G$1" pin="SDO" pad="18"/>
+<connect gate="G$1" pin="STCK" pad="25"/>
+<connect gate="G$1" pin="SW" pad="4"/>
+<connect gate="G$1" pin="VBOOT" pad="11"/>
+<connect gate="G$1" pin="VDD" pad="17"/>
+<connect gate="G$1" pin="VREG" pad="6"/>
+<connect gate="G$1" pin="VSA" pad="2 26"/>
+<connect gate="G$1" pin="VSB" pad="12 16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PD" package="POWER-SO36">
+<connects>
+<connect gate="G$1" pin="!BUSY!/SYNC" pad="29"/>
+<connect gate="G$1" pin="!CS!" pad="30"/>
+<connect gate="G$1" pin="!FLAG!" pad="31"/>
+<connect gate="G$1" pin="!STBY/RST!" pad="6"/>
+<connect gate="G$1" pin="ADCIN" pad="8"/>
+<connect gate="G$1" pin="AGND" pad="12"/>
+<connect gate="G$1" pin="CK" pad="26"/>
+<connect gate="G$1" pin="CP" pad="13"/>
+<connect gate="G$1" pin="DGND" pad="28"/>
+<connect gate="G$1" pin="OSCIN" pad="10"/>
+<connect gate="G$1" pin="OSCOUT" pad="11"/>
+<connect gate="G$1" pin="OUT1A" pad="2 3"/>
+<connect gate="G$1" pin="OUT1B" pad="17 18"/>
+<connect gate="G$1" pin="OUT2A" pad="35 36"/>
+<connect gate="G$1" pin="OUT2B" pad="20 21"/>
+<connect gate="G$1" pin="PGND" pad="1 19 EXP"/>
+<connect gate="G$1" pin="SDI" pad="27"/>
+<connect gate="G$1" pin="SDO" pad="25"/>
+<connect gate="G$1" pin="STCK" pad="32"/>
+<connect gate="G$1" pin="SW" pad="7"/>
+<connect gate="G$1" pin="VBOOT" pad="14"/>
+<connect gate="G$1" pin="VDD" pad="24"/>
+<connect gate="G$1" pin="VREG" pad="9"/>
+<connect gate="G$1" pin="VSA" pad="4 5 33 34"/>
+<connect gate="G$1" pin="VSB" pad="15 16 22 23"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -163,4 +337,11 @@
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
