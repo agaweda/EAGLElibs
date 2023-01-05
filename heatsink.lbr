@@ -40,7 +40,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -50,7 +50,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -164,6 +164,23 @@ TO220</description>
 <wire x1="37.5" y1="-7" x2="39" y2="-5" width="0.1524" layer="21" curve="-73.300756"/>
 <wire x1="-37.5" y1="-7" x2="-39" y2="-5" width="0.1524" layer="21" curve="73.300756"/>
 </package>
+<package name="PR32">
+<pad name="P$1" x="-12.7" y="0" drill="2.7" diameter="6.4516" thermals="no"/>
+<pad name="P$2" x="12.7" y="0" drill="2.7" diameter="6.4516" thermals="no"/>
+<wire x1="8" y1="6.35" x2="17.5" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="17.5" y1="6.35" x2="17.5" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="-17.5" y1="-6.35" x2="-17.5" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="-8" y1="-6.35" x2="-17.5" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="8" y1="-0.9" x2="-8" y2="-0.9" width="0.1524" layer="21"/>
+<wire x1="-8" y1="0.9" x2="8" y2="0.9" width="0.1524" layer="21"/>
+<wire x1="-8" y1="-0.9" x2="-8" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="8" y1="-0.9" x2="8" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="8" y1="0.9" x2="8" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="-8" y1="0.9" x2="-8" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="8" y1="-6.35" x2="17.5" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="-8" y1="6.35" x2="-17.5" y2="6.35" width="0.1524" layer="21"/>
+<dimension x1="-8" y1="-0.9" x2="-8" y2="0.9" x3="-4.5" y3="0" textsize="1.778" layer="47"/>
+</package>
 </packages>
 <symbols>
 <symbol name="HEATSINK">
@@ -209,6 +226,10 @@ TO220</description>
 <text x="0" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-7.62" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
+<symbol name="SP">
+<pin name="P$1" x="0" y="0" visible="off" length="point"/>
+<circle x="0" y="0" radius="0.508" width="0" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ICKSMDF21SA" prefix="H">
@@ -244,6 +265,26 @@ TO220</description>
 <technologies>
 <technology name="40"/>
 <technology name="50"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PR32/*" prefix="H">
+<gates>
+<gate name="G$1" symbol="HEATSINK" x="0" y="0"/>
+<gate name="G$2" symbol="SP" x="-2.54" y="5.08" addlevel="request" swaplevel="1"/>
+<gate name="G$3" symbol="SP" x="-2.54" y="-5.08" addlevel="request" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="PR32">
+<connects>
+<connect gate="G$2" pin="P$1" pad="P$1"/>
+<connect gate="G$3" pin="P$1" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="25.4"/>
+<technology name="38.1"/>
+<technology name="50.8"/>
 </technologies>
 </device>
 </devices>
