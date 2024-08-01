@@ -84,7 +84,9 @@
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
 <library>
-<description>&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
+<description>PTSA series connectors
+&lt;p&gt;
+&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
 <packages>
 <package name="8PIN">
 <pad name="8" x="15" y="0" drill="1" diameter="1.8" rot="R180"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -72,9 +72,9 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>&lt;i&gt;Created by &lt;b&gt;Alex&lt;/b&gt;&lt;/i&gt;</description>
+<description>&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
 <packages>
-<package name="SOT223-4" urn="urn:adsk.eagle:footprint:28484/1" locally_modified="yes">
+<package name="SOT223-4">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
 <wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.2032" layer="21"/>
 <wire x1="3.2766" y1="-1.778" x2="-3.2766" y2="-1.778" width="0.2032" layer="21"/>
@@ -101,7 +101,7 @@
 </package>
 </packages>
 <symbols>
-<symbol name="LP2950">
+<symbol name="VREG">
 <wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
@@ -119,7 +119,7 @@
 <devicesets>
 <deviceset name="IFX25001" prefix="IC">
 <gates>
-<gate name="G$1" symbol="LP2950" x="0" y="0"/>
+<gate name="G$1" symbol="VREG" x="0" y="0"/>
 </gates>
 <devices>
 <device name="ME" package="SOT223-4">

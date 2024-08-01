@@ -1,0 +1,1 @@
+-review all libraries - add short description and standard signature: <i>Created by <b>Aleks</b></i>

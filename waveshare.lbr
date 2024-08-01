@@ -72,7 +72,9 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
+<description>Footprints of various WaveShare modules
+&lt;br&gt;
+&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
 <packages>
 <package name="1.5&quot;OLED">
 <wire x1="1.5" y1="0" x2="43" y2="0" width="0.1524" layer="51"/>

@@ -74,7 +74,7 @@
 <library>
 <description>&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
 <packages>
-<package name="SOT23-6" urn="urn:adsk.eagle:footprint:16362/1" locally_modified="yes">
+<package name="SOT23-6">
 <description>&lt;b&gt;DON'T USE - SPECIAL CASE FOOTPRINT</description>
 <wire x1="1.422" y1="-0.781" x2="-1.423" y2="-0.781" width="0.1524" layer="51"/>
 <wire x1="-1.423" y1="-0.781" x2="-1.423" y2="0.781" width="0.1524" layer="21"/>
@@ -112,7 +112,7 @@
 </symbols>
 <devicesets>
 <deviceset name="INVERTER" prefix="IC">
-<description>This is sepcial device/footprint that allows to place SOT-23 N-Mosfet transistor with pullup resistor on drain or a standard NOT gate in SOT23-5 package</description>
+<description>This is special device/footprint that allows to place SOT-23 N-Mosfet transistor with pullup resistor on drain or a standard NOT gate in SOT23-5 package.</description>
 <gates>
 <gate name="G$1" symbol="INVERTER" x="0" y="0"/>
 </gates>

@@ -64,96 +64,101 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
 <packages>
-<package name="DS1095-01-WNR0">
-<pad name="VCC" x="0" y="0" drill="0.92"/>
-<pad name="D-" x="2" y="0" drill="0.92"/>
-<pad name="D+" x="4" y="0" drill="0.92"/>
-<pad name="GND" x="6" y="0" drill="0.92"/>
-<pad name="P$4" x="-0.5" y="-2.9" drill="1.35"/>
-<pad name="P$1" x="-0.5" y="2.9" drill="1.35"/>
-<pad name="P$3" x="6.5" y="-2.9" drill="1.35"/>
-<pad name="P$2" x="6.5" y="2.9" drill="1.35"/>
-<wire x1="7.11" y1="1.56" x2="7.11" y2="-1.56" width="0.1524" layer="21"/>
-<wire x1="-12.09" y1="2.86" x2="-12.09" y2="-2.86" width="0.1524" layer="21"/>
-<wire x1="-1.89" y1="2.86" x2="-12.09" y2="2.86" width="0.1524" layer="21"/>
-<wire x1="5.11" y1="2.86" x2="0.91" y2="2.86" width="0.1524" layer="21"/>
-<wire x1="-1.89" y1="-2.86" x2="-12.09" y2="-2.86" width="0.1524" layer="21"/>
-<wire x1="5.11" y1="-2.86" x2="0.91" y2="-2.86" width="0.1524" layer="21"/>
-<text x="-11" y="4" size="1" layer="25" font="vector" ratio="16">&gt;NAME</text>
-<text x="-11" y="-4" size="1" layer="27" font="vector" ratio="16" align="top-left">&gt;VALUE</text>
+<package name="POWER-SO20">
+<description>&lt;b&gt;PowerSO20&lt;/b&gt;</description>
+<smd name="5" x="-0.635" y="-6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="6" x="0.635" y="-6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="11" x="5.715" y="6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="EXP" x="0" y="0" dx="9.5" dy="6.3" layer="1" thermals="no" cream="no"/>
+<wire x1="-6.5" y1="-5.45" x2="7.9" y2="-5.45" width="0.2" layer="21"/>
+<wire x1="7.9" y1="-5.45" x2="7.9" y2="5.45" width="0.2" layer="21"/>
+<wire x1="7.9" y1="5.45" x2="-7.9" y2="5.45" width="0.2" layer="21"/>
+<wire x1="-7.9" y1="5.45" x2="-7.9" y2="-4.05" width="0.2" layer="21"/>
+<wire x1="-6.5" y1="-5.45" x2="-7.9" y2="-4.05" width="0.2" layer="21"/>
+<text x="-8.89" y="-3.81" size="1" layer="25" font="vector" ratio="16" rot="SR90">&gt;NAME</text>
+<text x="8.89" y="-3.81" size="1" layer="27" font="vector" ratio="16" rot="SR90" align="top-left">&gt;VALUE</text>
+<smd name="7" x="1.905" y="-6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="8" x="3.175" y="-6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="9" x="4.445" y="-6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="4" x="-1.905" y="-6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="3" x="-3.175" y="-6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="2" x="-4.445" y="-6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="1" x="-5.715" y="-6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="10" x="5.715" y="-6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="12" x="4.445" y="6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="13" x="3.175" y="6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="14" x="1.905" y="6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="15" x="0.635" y="6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="16" x="-0.635" y="6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="17" x="-1.905" y="6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="18" x="-3.175" y="6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="19" x="-4.445" y="6.8" dx="0.635" dy="1.27" layer="1"/>
+<smd name="20" x="-5.715" y="6.8" dx="0.635" dy="1.27" layer="1"/>
 </package>
 </packages>
 <symbols>
-<symbol name="USB">
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="0.444" y1="1.27" x2="0.944" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0.944" y1="1.27" x2="1.444" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.444" y1="1.27" x2="2.944" y2="2.77" width="0.254" layer="94"/>
-<wire x1="2.944" y1="2.77" x2="3.944" y2="2.77" width="0.254" layer="94"/>
-<wire x1="1.444" y1="1.27" x2="5.444" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0.944" y1="1.27" x2="2.444" y2="-0.23" width="0.254" layer="94"/>
-<wire x1="4.944" y1="1.77" x2="5.444" y2="1.27" width="0.254" layer="94"/>
-<wire x1="5.444" y1="1.27" x2="4.944" y2="0.77" width="0.254" layer="94"/>
-<wire x1="2.444" y1="-0.23" x2="3.944" y2="-0.23" width="0.254" layer="94"/>
-<wire x1="4.944" y1="1.77" x2="4.944" y2="0.77" width="0.254" layer="94"/>
-<text x="-7.62" y="7.874" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-5.334" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
-<pin name="VCC" x="-10.16" y="5.08" visible="pin" length="short" direction="pwr"/>
-<pin name="D-" x="-10.16" y="2.54" visible="pin" length="short"/>
-<pin name="D+" x="-10.16" y="0" visible="pin" length="short"/>
-<pin name="GND" x="-10.16" y="-2.54" visible="pin" length="short" direction="pwr"/>
-<circle x="-0.056" y="1.27" radius="0.3" width="0.5" layer="94"/>
-<circle x="4.444" y="2.77" radius="0.3" width="0.5" layer="94"/>
-<rectangle x1="3.944" y1="-0.73" x2="4.944" y2="0.27" layer="94"/>
-</symbol>
-<symbol name="SHIELD">
-<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" style="shortdash"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" style="shortdash"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1.27" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="7.62" y2="2.54" width="0.254" layer="94" style="shortdash" curve="90"/>
-<wire x1="7.62" y1="2.54" x2="7.62" y2="15.24" width="0.254" layer="94" style="shortdash"/>
-<wire x1="7.62" y1="15.24" x2="5.08" y2="17.78" width="0.254" layer="94" style="shortdash" curve="90"/>
-<wire x1="5.08" y1="17.78" x2="0" y2="17.78" width="0.254" layer="94" style="shortdash"/>
-<pin name="S1" x="-2.54" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="S2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="S3" x="2.54" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="S4" x="5.08" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<symbol name="L6225">
+<pin name="VCP" x="-17.78" y="17.78" length="middle"/>
+<pin name="VBOOT" x="-17.78" y="12.7" length="middle"/>
+<pin name="VS_A" x="17.78" y="17.78" length="middle" rot="R180"/>
+<pin name="OUT1A" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="OUT2A" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="OUT1B" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="OUT2B" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="IN1A" x="-17.78" y="7.62" length="middle"/>
+<pin name="IN2A" x="-17.78" y="2.54" length="middle"/>
+<pin name="IN1B" x="-17.78" y="-7.62" length="middle"/>
+<pin name="IN2B" x="-17.78" y="-12.7" length="middle"/>
+<pin name="EN_A" x="-17.78" y="-2.54" length="middle"/>
+<pin name="EN_B" x="-17.78" y="-17.78" length="middle"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="0.2" layer="94"/>
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.2" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="0.2" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.2" layer="94"/>
+<text x="-12.7" y="-20.32" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-12.7" y="20.32" size="1.778" layer="95">&gt;NAME</text>
+<pin name="VS_B" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="SENSE_A" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="SENSE_B" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="-25.4" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DS1095-01-WNR0" prefix="X">
+<deviceset name="L6225" prefix="IC">
+<description>DMOS DUAL FULL BRIDGE DRIVER</description>
 <gates>
-<gate name="G$1" symbol="USB" x="0" y="0"/>
-<gate name="G$2" symbol="SHIELD" x="2.54" y="-7.62" addlevel="request"/>
+<gate name="G$1" symbol="L6225" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DS1095-01-WNR0">
+<device name="PD" package="POWER-SO20">
 <connects>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-<connect gate="G$2" pin="S1" pad="P$1"/>
-<connect gate="G$2" pin="S2" pad="P$2"/>
-<connect gate="G$2" pin="S3" pad="P$3"/>
-<connect gate="G$2" pin="S4" pad="P$4"/>
+<connect gate="G$1" pin="EN_A" pad="5"/>
+<connect gate="G$1" pin="EN_B" pad="16"/>
+<connect gate="G$1" pin="GND" pad="1 10 11 20 EXP"/>
+<connect gate="G$1" pin="IN1A" pad="6"/>
+<connect gate="G$1" pin="IN1B" pad="14"/>
+<connect gate="G$1" pin="IN2A" pad="7"/>
+<connect gate="G$1" pin="IN2B" pad="15"/>
+<connect gate="G$1" pin="OUT1A" pad="9"/>
+<connect gate="G$1" pin="OUT1B" pad="12"/>
+<connect gate="G$1" pin="OUT2A" pad="3"/>
+<connect gate="G$1" pin="OUT2B" pad="18"/>
+<connect gate="G$1" pin="SENSE_A" pad="8"/>
+<connect gate="G$1" pin="SENSE_B" pad="13"/>
+<connect gate="G$1" pin="VBOOT" pad="17"/>
+<connect gate="G$1" pin="VCP" pad="4"/>
+<connect gate="G$1" pin="VS_A" pad="2"/>
+<connect gate="G$1" pin="VS_B" pad="19"/>
 </connects>
 <technologies>
 <technology name=""/>

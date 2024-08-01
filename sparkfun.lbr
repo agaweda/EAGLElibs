@@ -74,7 +74,7 @@
 <library>
 <description>&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
 <packages>
-<package name="SEN-13762" urn="urn:adsk.eagle:footprint:22258/1" locally_modified="yes">
+<package name="SEN-13762">
 <wire x1="5.7912" y1="15.875" x2="5.1562" y2="15.24" width="0.1524" layer="21"/>
 <wire x1="5.1562" y1="15.24" x2="3.8862" y2="15.24" width="0.1524" layer="21"/>
 <wire x1="3.8862" y1="15.24" x2="3.2512" y2="15.875" width="0.1524" layer="21"/>

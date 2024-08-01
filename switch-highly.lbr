@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -73,9 +73,10 @@
 <library>
 <description>HIGHLY tact switches
 &lt;p&gt;
-&lt;i&gt;Created by &lt;b&gt;Alex&lt;/i&gt;&lt;/b&gt;</description>
+&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/i&gt;&lt;/b&gt;</description>
 <packages>
 <package name="KS01-BL">
+<description>Round with backlight</description>
 <pad name="1" x="-2.5" y="2.5" drill="1" diameter="2"/>
 <pad name="2" x="2.5" y="2.5" drill="1" diameter="2"/>
 <pad name="3" x="-2.5" y="-2.5" drill="1" diameter="2"/>
@@ -108,6 +109,22 @@
 <wire x1="0" y1="4.5" x2="-2.7" y2="3.6" width="0.127" layer="21" curve="36.869898"/>
 <wire x1="0" y1="-4.5" x2="-2.7" y2="-3.6" width="0.127" layer="21" curve="-36.869898"/>
 <wire x1="0" y1="-4.5" x2="2.7" y2="-3.6" width="0.127" layer="21" curve="36.869898"/>
+</package>
+<package name="KS01-A">
+<description>Square</description>
+<pad name="1" x="-2.5" y="2.5" drill="1" diameter="2"/>
+<pad name="2" x="2.5" y="2.5" drill="1" diameter="2"/>
+<pad name="3" x="-2.5" y="-2.5" drill="1" diameter="2"/>
+<pad name="4" x="2.5" y="-2.5" drill="1" diameter="2"/>
+<text x="5.08" y="5.08" size="1.27" layer="27">&gt;VALUE</text>
+<text x="5.08" y="-5.08" size="1.27" layer="25" align="top-left">&gt;NAME</text>
+<wire x1="-3.75" y1="-3.75" x2="-3.75" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="3.75" x2="3.75" y2="3.75" width="0.127" layer="21"/>
+<wire x1="3.75" y1="3.75" x2="3.75" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="3.75" y1="-3.75" x2="-3.75" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="5.4" y1="2.6" x2="5.4" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-6" y1="0" x2="5.4" y2="2.6" width="0.127" layer="21" curve="-154.290046"/>
+<wire x1="-6" y1="0" x2="5.4" y2="-2.6" width="0.127" layer="21" curve="154.290046"/>
 </package>
 </packages>
 <symbols>
@@ -201,6 +218,24 @@
 <technology name="6">
 <attribute name="LEDCOLOR" value="Pure Green" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KS01-A-*" prefix="S">
+<gates>
+<gate name="G$1" symbol="BTN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KS01-A">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

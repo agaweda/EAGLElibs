@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -72,6 +72,9 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>RN2483 LoRa module
+&lt;p&gt;
+&lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
 <packages>
 <package name="RN2483">
 <description>Footprint based on Figure4-2 from &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002346C.pdf"&gt;&lt;i&gt;DS50002346C&lt;/i&gt;&lt;/a&gt;, page 11.</description>
