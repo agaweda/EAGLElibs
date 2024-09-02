@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -52,8 +52,8 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
@@ -64,7 +64,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -72,85 +72,94 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>GCT USB connectors&lt;p&gt;
+<description>&lt;b&gt;Cre-sound buzzers&lt;/b&gt;&lt;p&gt;
 &lt;i&gt;Created by &lt;b&gt;Aleks&lt;/b&gt;&lt;/i&gt;</description>
 <packages>
-<package name="USB4105">
-<smd name="7" x="0.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="8" x="0.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="9" x="1.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="10" x="1.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="6" x="-0.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="5" x="-0.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="4" x="-1.25" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="3" x="-1.75" y="7.355" dx="0.3" dy="1.15" layer="1"/>
-<smd name="2" x="-2.4" y="7.355" dx="0.6" dy="1.15" layer="1"/>
-<smd name="1" x="-3.2" y="7.355" dx="0.6" dy="1.15" layer="1"/>
-<smd name="11" x="2.4" y="7.355" dx="0.6" dy="1.15" layer="1"/>
-<smd name="12" x="3.2" y="7.355" dx="0.6" dy="1.15" layer="1"/>
-<hole x="-2.89" y="6.28" drill="0.65"/>
-<hole x="2.89" y="6.28" drill="0.65"/>
-<smd name="C4" x="4.32" y="2.6" dx="1" dy="1.8" layer="16" roundness="100"/>
-<wire x1="4.32" y1="3" x2="4.32" y2="2.2" width="0.6" layer="46"/>
-<smd name="C3" x="-4.32" y="2.6" dx="1" dy="1.8" layer="16" roundness="100"/>
-<wire x1="-4.32" y1="3" x2="-4.32" y2="2.2" width="0.6" layer="46"/>
-<smd name="C2" x="4.32" y="6.78" dx="1" dy="2.1" layer="16" roundness="100"/>
-<wire x1="4.32" y1="7.33" x2="4.32" y2="6.23" width="0.6" layer="46"/>
-<smd name="C1" x="-4.32" y="6.78" dx="1" dy="2.1" layer="16" roundness="100"/>
-<wire x1="-4.32" y1="7.33" x2="-4.32" y2="6.23" width="0.6" layer="46"/>
-<wire x1="-4.18" y1="0" x2="4.18" y2="0" width="0.1524" layer="51"/>
+<package name="LPT1325S-HL-05-4.1-15-R">
+<smd name="P1" x="0" y="7.6" dx="3" dy="4.5" layer="1"/>
+<smd name="P2" x="0" y="-7.6" dx="3" dy="4.5" layer="1"/>
+<wire x1="-6.5" y1="6.5" x2="-2.54" y2="6.5" width="0.1524" layer="21"/>
+<wire x1="-6.5" y1="6.5" x2="-6.5" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="-6.5" y1="1.5" x2="-6.5" y2="-1.5" width="0.1524" layer="21"/>
+<wire x1="-6.5" y1="-1.5" x2="-6.5" y2="-6.5" width="0.1524" layer="21"/>
+<wire x1="-6.5" y1="-6.5" x2="-2.54" y2="-6.5" width="0.1524" layer="21"/>
+<wire x1="6.5" y1="-6.5" x2="6.5" y2="6.5" width="0.1524" layer="21"/>
+<wire x1="6.5" y1="-6.5" x2="2.54" y2="-6.5" width="0.1524" layer="21"/>
+<wire x1="6.5" y1="6.5" x2="2.54" y2="6.5" width="0.1524" layer="21"/>
+<wire x1="-5.8" y1="-1.5" x2="-6.5" y2="-1.5" width="0.1524" layer="21"/>
+<wire x1="-5.8" y1="1.5" x2="-5.8" y2="-1.5" width="0.1524" layer="21"/>
+<wire x1="-5.8" y1="1.5" x2="-6.5" y2="1.5" width="0.1524" layer="21"/>
+<text x="-7.62" y="-6.35" size="1" layer="25" ratio="16" rot="R90">&gt;NAME</text>
+</package>
+<package name="LPT9018BS-HL-03-4.0-12-R">
+<smd name="P1" x="-5" y="0" dx="2.1" dy="4.4" layer="1"/>
+<smd name="P2" x="5" y="0" dx="2.1" dy="4.4" layer="1"/>
+<wire x1="-4.5" y1="4.5" x2="4.5" y2="4.5" width="0.1524" layer="21"/>
+<wire x1="4.5" y1="-4.5" x2="-4.5" y2="-4.5" width="0.1524" layer="21"/>
+<wire x1="-4.5" y1="2.54" x2="-4.5" y2="4.5" width="0.1524" layer="21"/>
+<wire x1="4.5" y1="-2.54" x2="4.5" y2="-4.5" width="0.1524" layer="21"/>
+<wire x1="-4.5" y1="-2.54" x2="-4.5" y2="-4.5" width="0.1524" layer="21"/>
+<wire x1="4.5" y1="2.54" x2="4.5" y2="4.5" width="0.1524" layer="21"/>
+<text x="-3.81" y="5.08" size="1" layer="21" ratio="16">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
-<symbol name="USB-C">
-<pin name="VBUS" x="7.62" y="17.78" length="short" direction="pwr" rot="R180"/>
-<pin name="GND" x="7.62" y="-17.78" length="short" direction="pwr" rot="R180"/>
-<pin name="CC1" x="7.62" y="-7.62" length="short" rot="R180"/>
-<pin name="CC2" x="7.62" y="-12.7" length="short" rot="R180"/>
-<pin name="SBU2" x="7.62" y="7.62" length="short" rot="R180"/>
-<pin name="SBU1" x="7.62" y="12.7" length="short" rot="R180"/>
-<pin name="D-" x="7.62" y="-2.54" length="short" rot="R180"/>
-<pin name="D+" x="7.62" y="2.54" length="short" rot="R180"/>
-<wire x1="5.08" y1="17.78" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-17.78" x2="-5.08" y2="-17.78" width="0.254" layer="94" curve="-180"/>
-<wire x1="-5.08" y1="17.78" x2="-5.08" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="17.78" x2="5.08" y2="17.78" width="0.254" layer="94" curve="-180"/>
-<text x="5.08" y="22.86" size="1.778" layer="95">&gt;NAME</text>
-<text x="5.08" y="-22.86" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
-</symbol>
-<symbol name="CASE4COM">
-<pin name="C4" x="5.08" y="-27.94" visible="pad" length="short" direction="pwr" swaplevel="1" rot="R90"/>
-<pin name="C2" x="0" y="-27.94" visible="pad" length="short" direction="pwr" swaplevel="1" rot="R90"/>
-<pin name="C3" x="2.54" y="-27.94" visible="pad" length="short" direction="pwr" swaplevel="1" rot="R90"/>
-<pin name="C1" x="-2.54" y="-27.94" visible="pad" length="short" direction="pwr" swaplevel="1" rot="R90"/>
-<wire x1="-7.62" y1="20.32" x2="-7.62" y2="-20.32" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-2.54" y1="25.4" x2="5.08" y2="25.4" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-2.54" y1="-25.4" x2="-7.62" y2="-20.32" width="0.254" layer="94" style="shortdash" curve="-90"/>
-<wire x1="5.08" y1="-25.4" x2="-2.54" y2="-25.4" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-7.62" y1="20.32" x2="-2.54" y2="25.4" width="0.254" layer="94" style="shortdash" curve="-90"/>
+<symbol name="PIEZO">
+<wire x1="-1.27" y1="3.175" x2="0" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="0" y1="3.175" x2="0" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="0" y1="3.175" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="4.445" x2="0.635" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="1.905" x2="1.905" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="1.905" x2="1.905" y2="4.445" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="0.635" y2="4.445" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="3.175" x2="3.81" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="3.175" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.715" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.715" y1="5.08" x2="5.715" y2="5.715" width="0.254" layer="94"/>
+<wire x1="5.715" y1="5.715" x2="-3.175" y2="5.715" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="5.715" x2="-3.175" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="6.35" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="USB4105" prefix="CON">
+<deviceset name="LPT1325S-HL-05-4.1-15-R" prefix="BUZ">
 <gates>
-<gate name="G$1" symbol="USB-C" x="0" y="0"/>
-<gate name="G$2" symbol="CASE4COM" x="0" y="0" addlevel="request"/>
+<gate name="G$1" symbol="PIEZO" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="USB4105">
+<device name="" package="LPT1325S-HL-05-4.1-15-R">
 <connects>
-<connect gate="G$1" pin="CC1" pad="3"/>
-<connect gate="G$1" pin="CC2" pad="9"/>
-<connect gate="G$1" pin="D+" pad="6 7"/>
-<connect gate="G$1" pin="D-" pad="5 8"/>
-<connect gate="G$1" pin="GND" pad="1 12"/>
-<connect gate="G$1" pin="SBU1" pad="10"/>
-<connect gate="G$1" pin="SBU2" pad="4"/>
-<connect gate="G$1" pin="VBUS" pad="2 11"/>
-<connect gate="G$2" pin="C1" pad="C1"/>
-<connect gate="G$2" pin="C2" pad="C2"/>
-<connect gate="G$2" pin="C3" pad="C3"/>
-<connect gate="G$2" pin="C4" pad="C4"/>
+<connect gate="G$1" pin="1" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LPT9018BS-HL-03-4.0-12-R" prefix="BUZ">
+<gates>
+<gate name="G$1" symbol="PIEZO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LPT9018BS-HL-03-4.0-12-R">
+<connects>
+<connect gate="G$1" pin="1" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P2"/>
 </connects>
 <technologies>
 <technology name=""/>
